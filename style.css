@@ -1,0 +1,5082 @@
+html {
+  background: #fff;
+  font-family: Monospace, sans-serif;
+  font-size: 16px;
+}
+body {
+  margin: 0px auto;
+}
+h1.master_page,
+h2.master_page,
+h3.master_page,
+h4.master_page,
+h5.master_page,
+h6.master_page {
+  margin: 0px 0px 10px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+h2.master_page {
+  font-size: 1.8rem;
+}
+h4.master_page {
+  font-size: 1.4rem;
+}
+h5.master_page {
+  font-size: 1.2rem;
+}
+header.master_page {
+  width: 100vw;
+  height: 70px;
+  box-shadow: 0 10px 15px -10px #000000;
+  position: fixed;
+  background-color: rgba(154, 194, 255, 0.9);
+  margin: 0px;
+  padding: 0px;
+  z-index: 10;
+}
+main.master_page > section div img {
+  width: 95%;
+}
+div.logo img {
+  padding-top: 5px;
+  height: 60px;
+}
+div.logo img:hover {
+  padding-left: 3px;
+  padding-top: 8px;
+  height: 50px;
+}
+div.logo {
+  flex-grow: 1;
+  margin-left: 3vw;
+}
+main.master_page > section {
+  width: 70%;
+  margin: 0 auto;
+  padding: 3%;
+  padding-top: 5%;
+}
+
+section#about,
+section#education,
+section#experience,
+section#work,
+section#contact {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+}
+
+/*   ----------------------------------------*/
+main.master_page > section#work {
+  grid-template-columns: 3;
+  grid-template-rows: 2;
+}
+
+p.textLeft {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+div.imageLeft {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+p.textRight,
+div.textRight {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  align-self: center;
+}
+div.imageRight {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+div.text2 {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+ul.courses {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+p.master_page {
+  text-indent: 1em;
+  font-size: 22px;
+}
+
+a.navigate,
+a.resume,
+.logo a,
+.jJFfEJ a,
+ul.courses a {
+  text-decoration: none;
+  color: #000;
+  box-sizing: border-box;
+  display: inline-block;
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+a.navigate {
+  padding: 10px 1.3vw 0px;
+  margin-top: 10px;
+  height: 60px;
+  font-size: 1.35rem;
+}
+div.nav_bar > ol {
+  list-style-type: none;
+}
+.nav_bar,
+header.master_page > nav,
+div.nav_bar > ol {
+  display: flex;
+  margin-top: 0px;
+}
+.nav_bar {
+  justify-content: space-between;
+  margin-right: 2vw;
+}
+.nav_bar li {
+  align-self: center;
+}
+a.navigate:hover {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 1000;
+}
+a.resume {
+  border: 2px solid white;
+  color: #fff;
+  font-size: 1.34rem;
+  border-radius: 15%;
+  padding: 10px 7px 0px;
+  height: 50px;
+}
+a.intext,
+ul.courses a,
+section#work a,
+footer.footer__StyledFooter-sc-4jwnt4-0 a {
+  text-decoration: none;
+  color: #5983ff;
+  font-size: 1.35rem;
+}
+a.intext:hover,
+ul.courses a:hover {
+  text-decoration: underline;
+}
+a.resume:hover {
+  border: 2px solid black;
+  color: black;
+  background-color: #fff;
+}
+.dVLQAC a {
+  border: 0px solid black;
+  border-radius: 20%;
+}
+.dVLQAC a:hover {
+  color: white;
+  border: 2px solid black;
+  background-color: rgba(154, 194, 255, 0.9);
+}
+.dVLQAC::after,
+.jJFfEJ::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 14vh;
+  margin: 0px auto;
+  background-color: black;
+}
+.rightBar a:hover {
+  color: white;
+  border: 2px solid black;
+  background-color: rgba(154, 194, 255, 0.9);
+}
+.leftBar {
+  width: 8vw;
+  position: fixed;
+  bottom: 0px;
+  left: 3vw;
+  right: auto;
+  z-index: 10;
+}
+.rightBar {
+  width: 8vw;
+  position: fixed;
+  bottom: 0px;
+  left: auto;
+  right: 3vw;
+  z-index: 10;
+}
+.dVLQAC {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+ul.skills-list,
+ul.courses,
+ul.master_page {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+/*   */
+ul.dVLQAC li,
+ul.skills-list li,
+ul.courses li,
+ul.master_page li {
+  display: list-item;
+}
+.dVLQAC li a {
+  padding: 10px;
+}
+.dVLQAC li a {
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.dVLQAC li a svg {
+  width: 40px;
+  height: 40px;
+}
+svg.feather {
+  fill: none;
+}
+svg {
+  width: 100%;
+  height: 100%;
+  fill: currentcolor;
+  vertical-align: middle;
+}
+section#work img,
+section#experience img,
+section#education img,
+section#about img,
+svg,
+.gatsby-image-wrapper {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.jJFfEJ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.jJFfEJ a {
+  margin: 20px auto;
+  padding: 10px;
+  letter-spacing: 0.1em;
+  writing-mode: vertical-rl;
+  font-size: 1.35rem;
+}
+
+.eEjAsd {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 0px;
+}
+.eEjAsd h1 {
+  margin: 0px 0px 30px 4px;
+  color: #000;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: clamp(18px, 5vw, 20px);
+  font-weight: 400;
+}
+.big-heading {
+  margin: 0px;
+  font-size: clamp(35px, 8vw, 60px);
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", system-ui,
+    sans-serif;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.eEjAsd h3 {
+  margin-top: 10px;
+  line-height: 0.9;
+  color: #6a87df;
+}
+h3 .intext {
+  color: #6a87df;
+}
+.eEjAsd p,
+.eXnPVF p {
+  text-indent: 0em;
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", system-ui,
+    sans-serif;
+  color: #8298db;
+}
+
+.bNXWUU .inner {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 50px;
+}
+.kNIdQM ul.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 250px));
+  gap: 0px 10px;
+  padding: 0px;
+  margin: 20px 0px 0px 20px;
+  font-size: 1.35rem;
+}
+.iTdkQf {
+  position: relative;
+  max-width: 350px;
+}
+#myPhoto {
+  z-index: 1;
+  opacity: 0.8;
+  border-radius: 5%;
+}
+#myPhoto:hover {
+  opacity: 1;
+}
+
+.eXnPVF {
+  max-width: 800px;
+  margin: 0px auto 100px;
+  text-align: center;
+}
+.eXnPVF .overline {
+  display: block;
+  margin-bottom: 20px;
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", system-ui,
+    sans-serif;
+  font-weight: 400;
+}
+.overline {
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", system-ui,
+    sans-serif;
+  font-weight: 400;
+}
+.eXnPVF .title {
+  font-size: clamp(40px, 5vw, 60px);
+}
+.eXnPVF .email-link {
+  color: #000;
+  font-weight: 600;
+  background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+  display: block;
+  border: 1px solid #000;
+  border-radius: 5%;
+  padding: 0.8rem 1.3rem;
+  font-size: 20px;
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", system-ui,
+    sans-serif;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 50px;
+  width: 85px;
+  margin: 0 auto;
+}
+.eXnPVF .email-link:hover {
+  background: linear-gradient(180deg, #92fe9d 0%, #00c9ff 100%);
+  width: 75px;
+
+  margin-top: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0rem 1.3;
+}
+
+.earxGk {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  min-height: 70px;
+  padding: 15px;
+  text-align: center;
+}
+.iKeBGp {
+  display: none;
+  margin-bottom: 1rem;
+}
+.iKeBGp ul {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.iKeBGp ul a {
+  padding: 10px;
+}
+.iKeBGp ul a svg {
+  width: 20px;
+  height: 20px;
+}
+svg.feather {
+  fill: none;
+}
+svg {
+  width: 100%;
+  height: 100%;
+  fill: currentcolor;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+div#first_img {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+div#second_img {
+  grid-column: 2 / 3;
+
+  grid-row: 2 / 3;
+}
+div#third_img {
+  grid-column: 3 / 4;
+
+  grid-row: 2 / 3;
+}
+#work h2 {
+  grid-column: 1 / 4;
+
+  grid-row: 1 / 2;
+}
+section#work div {
+  width: 22vw;
+  margin: 1%;
+}
+section#work div {
+  opacity: 0.7;
+}
+section#work div:hover {
+  opacity: 1;
+}
+
+.eXnPVF p {
+  color: rgb(82, 81, 81);
+}
+
+/* -----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------- */
+.my_modal {
+  position: fixed;
+  top: 0px;
+  right: 0;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1050;
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.my_modal:target {
+  display: block;
+  overflow-y: auto;
+}
+
+.my_modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+
+.my_modal-content {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .my_modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.my_modal-header {
+  display: block;
+  padding: 14px 14px 4px;
+}
+
+.my_modal-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.close {
+  padding: 1px 5px 0;
+  border: 1px solid #000;
+  border-radius: 50%;
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.5;
+  text-decoration: none;
+  top: 4px;
+  right: 4px;
+  position: absolute;
+}
+
+.close:focus,
+.close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+.my_modal-body {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 15px;
+  overflow: auto;
+}
+:root {
+  --font1: 1.125rem;
+  --font2: 1.375rem;
+  --font3: 1.75rem;
+  --font4: 2rem;
+  --padding: 75px;
+  --width: 1440px;
+}
+
+@font-face {
+  font-family: Forum-regular;
+  src: url("assets/fonts/Forum-Regular.ttf");
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url("assets/fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("assets/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: Roboto-Medium;
+  src: url("assets/fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: Roboto-Thin;
+  src: url("assets/fonts/Roboto-Thin.ttf");
+}
+
+/*html {
+  scroll-behavior: smooth;
+}*/
+div.museum-project #welcome-nav,
+#alt-welcome-nav {
+  display: none;
+  z-index: 100;
+}
+
+div.museum-project #alt-welcome-nav {
+  display: grid;
+  visibility: hidden;
+  position: absolute;
+  top: 443px;
+  left: 55px;
+  grid-template-rows: 194px 161px 118px;
+  grid-template-columns: 319px 319px;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+div.museum-project #alt-1 {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  max-width: 658px;
+  height: auto;
+  background: url(assets/img/alt1.jpg);
+}
+div.museum-project #alt-2 {
+  grid-column: 1 / 2;
+  grid-row: 2;
+  max-width: 319px;
+  height: auto;
+  background: url(assets/img/alt2.jpg);
+}
+div.museum-project #alt-3 {
+  grid-column: 2 / 3;
+  grid-row: 2;
+  max-width: 319px;
+  height: auto;
+  background: url(assets/img/alt3.jpg);
+}
+div.museum-project #alt-4 {
+  grid-column: 1 / 3;
+  grid-row: 3;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  margin-top: 10px;
+  display: grid;
+  grid-template-rows: 108px;
+  justify-content: center;
+}
+div.museum-project ul.social.social-header {
+  padding-left: 0px;
+  padding-top: 20px;
+}
+div.museum-project .vector {
+  background: url(assets/svg/Vector-welcome.svg) no-repeat;
+  background-position: 100% 10%;
+  width: 12px;
+  height: 12px;
+  padding: 0px;
+  margin: 0px;
+}
+div.museum-project .section {
+  padding: 75px 0 75px 12px;
+}
+
+div.museum-project header .section {
+  padding: 58px 0px;
+}
+div.museum-project .dark-section {
+  background-color: #000;
+  color: #fff;
+}
+
+div.museum-project .container {
+  max-width: var(--width);
+  margin: 0 auto;
+}
+div.museum-project .header-container > div {
+  flex-grow: 1;
+}
+div.museum-project .header-container,
+div.museum-project nav,
+div.museum-project header ul,
+div.museum-project .welcome-slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.museum-project .logo {
+  background-image: url("assets/svg/logo.svg");
+  background-repeat: no-repeat;
+  height: 34px;
+  width: 199px;
+}
+
+div.museum-project .logo:hover,
+div.museum-project nav div:hover,
+div.museum-project span.words:hover {
+  filter: invert(60%) sepia(6%) saturate(1929%) hue-rotate(356deg)
+    brightness(220%) contrast(88%);
+}
+
+div.museum-project li {
+  list-style: none;
+}
+
+div.museum-project nav {
+  max-width: 775px;
+  float: left;
+}
+
+div.museum-project nav div {
+  padding: 0 27.5px;
+  color: #fff;
+  font-size: var(--font2);
+  height: 34px;
+  vertical-align: middle;
+}
+
+div.museum-project a {
+  text-decoration: none;
+}
+
+div.museum-project .close-nav {
+  background: url(assets/svg/Group44.svg);
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 20px;
+  top: 53px;
+  visibility: hidden;
+}
+div.museum-project .burger-nav {
+  background: url(assets/svg/burger.svg);
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 20px;
+  top: 53px;
+  display: none;
+}
+
+div.museum-project nav li:last-child div {
+  padding-right: 0;
+}
+
+div.museum-project nav ul {
+  padding-right: 3vw;
+  margin: 0;
+}
+
+div.museum-project main section:first-child {
+  padding: 0;
+}
+
+div.museum-project .welcome {
+  max-width: 1440px;
+}
+/* .welcome::before {
+  content: "";
+  position: absolute;
+  top: 150px;
+  left: 0px;
+  height: 810px;
+  width: 500px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 23%,
+    rgba(255, 255, 255, 0) 40%
+  );
+  z-index: 10;
+} */
+div.museum-project .welcome-slider-img {
+  position: relative;
+  height: 810px;
+  width: 100%;
+  max-width: 1440px;
+  overflow: hidden;
+  padding: 0;
+}
+div.museum-project .sl-img {
+  position: absolute;
+  right: 0px;
+  transition: 0.05s linear;
+  transform: translateX(-1000%);
+  visibility: hidden;
+}
+div.museum-project .sl-img:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 30%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.5) 16%,
+    rgba(0, 0, 0, 0) 30%
+  );
+  z-index: 10;
+}
+div.museum-project .active {
+  transform: translateX(0);
+  visibility: visible;
+}
+div.museum-project h1,
+div.museum-project h2 {
+  padding: 0;
+  margin: 0;
+  font-family: "Forum-Regular", sans-serif;
+  font-weight: 400;
+  line-height: 90px;
+  font-size: max(45px, calc(10px + 2.6vw));
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+div.museum-project h3 {
+  font-family: "Forum-Regular", sans-serif;
+  font-weight: 400;
+  font-size: calc(21px + 0.5vw);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+div.museum-project nav div {
+  font-family: "Roboto-thin", sans-serif;
+  letter-spacing: 3px;
+}
+div.museum-project h2,
+div.museum-project span.highlighted {
+  color: #9d8665;
+}
+div.museum-project span#tick-head {
+  font-family: "Forum";
+  font-size: var(--font1);
+  color: #9d8665;
+  border-bottom: 2px solid #740c11;
+  width: 370px;
+  padding-left: 0px;
+  margin-left: 15px;
+  line-height: 20px;
+}
+div.museum-project .welcome h2 {
+  font-weight: 100;
+  font-size: var(--font3);
+  font-family: "Roboto-thin", sans-serif;
+  line-height: 33px;
+  color: #fff;
+  text-transform: none;
+  margin-top: 25px;
+  margin-bottom: 75px;
+}
+
+div.museum-project .welcome-text div {
+  width: 360px;
+  height: 75px;
+  background: #710707;
+  border-radius: 10px;
+  color: #fff;
+  font-size: var(--font2);
+  font-family: "Roboto-thin", sans-serif;
+  border: 0px solid;
+  padding: 20px 0 0 0;
+  box-sizing: border-box;
+  z-index: 15;
+}
+div.museum-project #discover-louvre {
+  width: 360px;
+  height: 55px;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+}
+div.museum-project .welcome-text {
+  height: 350px;
+  position: absolute;
+  top: 150px;
+  left: 0px;
+  z-index: 15;
+}
+div.museum-project .burger-line {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 102px 12px;
+  grid-template-rows: 23px;
+  align-items: center;
+  padding-right: 0px;
+}
+
+div.museum-project .welcome-slider {
+  height: 120px;
+  width: calc(300px + 15.79vw);
+  background-color: #000;
+  float: right;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  display: grid;
+  grid-template-columns: calc(102.5px+5.395vw) calc(90px+4.737vw) 1fr;
+  grid-template-rows: 1fr;
+}
+
+div.museum-project .list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 1 / 2;
+  font-family: "roboto-regular";
+  font-size: var(--font2);
+  width: calc(38px + 2vw);
+  height: 40px;
+  padding-left: calc(37px + 2vw);
+  padding-right: 55px;
+}
+
+div.museum-project .dots {
+  grid-column: 2 / 3;
+  width: calc(90px + 4.737vw);
+  height: 16px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  gap: 25px;
+}
+
+div.museum-project .dot {
+  height: 16px;
+  width: 16px;
+  background-color: #fff;
+}
+div.museum-project .dot:hover {
+  height: 20px;
+  width: 20px;
+}
+
+div.museum-project .activeDot {
+  background-color: rgb(210, 177, 131);
+}
+div.museum-project .arrows {
+  grid-column: 3 / 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding-left: 60px;
+  padding-right: 75px;
+  align-items: center;
+  gap: 20px;
+}
+div.museum-project .arrows button {
+  border: none;
+  padding: 4px 0px 0px 0px;
+  position: relative;
+}
+div.museum-project .arrows button:hover > img {
+  width: 45px;
+  height: 12px;
+  filter: invert(60%) sepia(6%) saturate(1929%) hue-rotate(356deg)
+    brightness(220%) contrast(88%);
+  top: 10px;
+}
+
+div.museum-project .arrows img {
+  position: absolute;
+  top: 13px;
+  left: 0px;
+}
+div.museum-project #arr-prev,
+div.museum-project #arr-next {
+  height: 36px;
+  width: 56px;
+}
+
+div.museum-project #arr-prev {
+  grid-column: 1 / 2;
+  background: none;
+}
+
+div.museum-project #arr-next {
+  grid-column: 2 / 3;
+  background: none;
+}
+
+div.museum-project #first-dot {
+  grid-column: 1 / 2;
+}
+
+div.museum-project #second-dot {
+  grid-column: 2 / 3;
+}
+
+div.museum-project #third-dot {
+  grid-column: 3 / 4;
+}
+
+div.museum-project #fourth-dot {
+  grid-column: 4 / 5;
+}
+
+div.museum-project #fifth-dot {
+  grid-column: 5 / 6;
+}
+
+div.museum-project .visiting-main {
+  padding-top: 75px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 75px;
+  margin: 0 auto;
+}
+div.museum-project .google-view {
+  width: 60%;
+  max-width: 450px;
+  height: 67px;
+  border-top: 3px solid #710707;
+  transition-duration: 1s;
+}
+div.museum-project .visiting-main a:hover > .google-view {
+  width: 97%;
+  height: 67px;
+  border-top: 3px solid #710707;
+}
+div.museum-project .visiting-main img {
+  height: auto;
+  width: 97%;
+  max-width: 460px;
+}
+
+div.museum-project .visiting-main a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+div.museum-project .virtual {
+  font-size: var(--font2);
+  font-family: "roboto-thin";
+  margin: 10px 0;
+}
+div.museum-project .panorama {
+  font-size: calc(10px + 0.5vw);
+  font-family: "roboto-thin";
+  margin: 10px 0;
+  width: 100%;
+}
+div.museum-project .visiting-header,
+div.museum-project .explore-header,
+div.museum-project .tickets-header,
+div.museum-project .contacts-header {
+  height: 115px;
+  border-bottom: 3px solid #710707;
+}
+
+div.museum-project #explore .container {
+  height: 715px;
+  display: grid;
+  grid-template-columns: 1fr 650px;
+  grid-template-rows: 1fr;
+  column-gap: 0.3%;
+}
+div.museum-project .dark {
+  color: white;
+}
+div.museum-project .explore-txt,
+div.museum-project .video-header > p {
+  font-family: "roboto-thin";
+  line-height: 38px;
+}
+div.museum-project .explore-txt p {
+  font-size: 1.375rem;
+}
+
+div.museum-project .explore-header,
+div.museum-project .tickets-header,
+div.museum-project .contacts-header {
+  margin-bottom: 75px;
+}
+
+div.museum-project .explore-header p {
+  margin: 25px 0;
+}
+div.museum-project #video {
+  width: 100%;
+}
+div.museum-project .test .small-video {
+  width: 97%;
+}
+div.museum-project div.test {
+  justify-self: center;
+}
+div.museum-project .video-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  margin-bottom: 53px;
+  justify-content: space-between;
+}
+
+div.museum-project .video-header > p {
+  width: 720px;
+  height: 90px;
+}
+
+div.museum-project .video-another {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 254px;
+  margin: 40px 0;
+}
+
+div.museum-project .video-dots {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: repeat(7, 12px);
+  grid-template-rows: 18px;
+  column-gap: 20px;
+  width: 200px;
+  margin: 0 auto;
+}
+div.museum-project .video-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #999;
+}
+div.museum-project .video-dot:hover {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #999;
+}
+div.museum-project .active-video-dot {
+  background: #333;
+}
+div.museum-project .active-video-dot:hover {
+  background: #333;
+}
+div.museum-project .video-dots button {
+  position: relative;
+  width: 15px;
+  height: 18px;
+  background: none;
+  border: none;
+}
+div.museum-project .video-dots button img {
+  position: absolute;
+  top: 3px;
+  left: 0px;
+}
+div.museum-project .video-dots button img:hover {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 15px;
+}
+
+div.museum-project .picture-container {
+  overflow-y: hidden;
+  height: calc(1000px + 60vw);
+}
+
+div.museum-project .picture-inner-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 30%);
+  column-gap: 36px;
+  margin-left: 35px;
+}
+div.museum-project .picture-inner-container img {
+  padding-bottom: 24px;
+  width: 98%;
+}
+div.museum-project .picture-inner-container div {
+  width: 98%;
+}
+div.museum-project #gallery {
+  padding-bottom: 0px;
+}
+div.museum-project .gallery {
+  padding-bottom: 75px;
+}
+
+div.museum-project .picture-inner-container::before {
+  content: "";
+  position: absolute;
+  top: 600px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 23%,
+    rgba(255, 255, 255, 0) 40%
+  );
+  z-index: 1;
+}
+
+div.museum-project h4 {
+  font-family: "roboto-bold";
+  font-size: var(--font3);
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+div.museum-project .tickets {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 550px;
+  column-gap: max(15px, calc(60px - 2vw));
+  justify-content: space-between;
+}
+
+div.museum-project .tickets-type {
+  display: grid;
+  grid-template-columns: 270px 150px;
+  grid-template-rows: 340px 50px;
+  justify-content: space-between;
+  align-items: start;
+}
+div.museum-project .tickets-txt div img {
+  width: 97%;
+}
+div.museum-project .cont,
+div.museum-project .tickets-type p {
+  font-family: "roboto";
+  font-size: var(--font2);
+}
+
+div.museum-project .cont {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: var(--font2);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+div.museum-project .cont input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+div.museum-project .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+div.museum-project .cont:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+div.museum-project .cont input:checked ~ .checkmark {
+  background-color: #fff;
+}
+
+div.museum-project .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+div.museum-project .cont input:checked ~ .checkmark:after {
+  display: block;
+}
+
+div.museum-project .cont .checkmark:after {
+  top: 4px;
+  left: 4px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: black;
+}
+
+div.museum-project #amount,
+div.museum-project #buy,
+div.museum-project #total {
+  float: right;
+}
+div.museum-project #total {
+  margin-top: 50px;
+}
+div.museum-project .number {
+  all: unset;
+  text-align: center;
+}
+div.museum-project #buy {
+  width: 175px;
+  height: 50px;
+  background: black;
+  color: #fff;
+  font-family: "roboto-thin";
+  font-size: var(--font2);
+}
+div.museum-project #buy:hover {
+  width: 183px;
+  height: 53px;
+  font-size: 24px;
+}
+div.museum-project .btn {
+  width: 145px;
+  height: 50px;
+  border: 3px solid black;
+  display: grid;
+  grid-template-columns: 40px 60px 40px;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+div.museum-project .steps {
+  font-family: "roboto-bold";
+  font-size: var(--font4);
+  background: #fff;
+  border: none;
+}
+
+div.museum-project input.number {
+  font-family: "roboto";
+  font-size: var(--font2);
+  text-align: center;
+}
+
+div.museum-project #parallax {
+  width: 100%;
+  height: 400px;
+  background-image: url("assets/img/parallax.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+div.museum-project .contacts {
+  display: grid;
+  grid-template-columns: 283px 1fr;
+  grid-template-rows: 620px;
+  align-items: top;
+  justify-content: space-between;
+}
+div.museum-project .contacts-img {
+  background: url(assets/img/map.jpg) no-repeat;
+  width: 100%;
+}
+div.museum-project .contacts-txt span {
+  font-family: "roboto";
+  font-size: var(--font2);
+  padding-left: 0px;
+  margin-bottom: 25px;
+  display: block;
+  color: black;
+}
+
+div.museum-project .footer-container {
+  display: grid;
+  grid-template-columns: 340px 363px 1fr;
+  position: relative;
+  height: 190px;
+  padding-bottom: 0px;
+  border-bottom: 3px solid #666666;
+}
+div.museum-project .social {
+  width: 340px;
+  height: 48px;
+  display: grid;
+  grid-template-columns: repeat(5, 48px);
+  column-gap: 25px;
+  align-items: center;
+}
+div.museum-project .social-footer {
+  position: absolute;
+  bottom: 55px;
+  right: 0px;
+}
+div.museum-project .social div {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+div.museum-project .social div:hover {
+  border: 3px solid #9d8665;
+}
+div.museum-project .social div:hover > img {
+  filter: invert(60%) sepia(6%) saturate(1929%) hue-rotate(356deg)
+    brightness(220%) contrast(88%);
+  padding-top: 9px;
+  padding-left: 9px;
+}
+
+div.museum-project .social div img {
+  padding-top: 11px;
+  padding-left: 11px;
+}
+div.museum-project .footer-container nav {
+  position: relative;
+}
+div.museum-project .navigation-bottom ul {
+  margin: 0;
+  padding-left: 0;
+  width: 363px;
+  height: 128px;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 110px 110px;
+  grid-template-rows: 51px 51px 51px;
+  align-items: center;
+  text-align: left;
+  position: absolute;
+  top: 0px;
+}
+
+div.museum-project .navigation-bottom li {
+  display: block;
+  padding-bottom: 25px;
+}
+
+div.museum-project .footer-container div {
+  color: white;
+  font-family: "roboto-thin";
+  font-size: var(--font2);
+  padding: 0px;
+}
+
+div.museum-project .bottom {
+  display: grid;
+  grid-template-columns: 180px 1fr 180px;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "roboto-thin";
+  font-size: var(--font2);
+}
+div.museum-project #username {
+  text-align: right;
+}
+
+div.museum-project .footer {
+  padding-bottom: 0px;
+}
+
+div.museum-project a #rsschool,
+div.museum-project a #username {
+  text-align: center;
+  color: #fff;
+}
+div.museum-project .bottom > p {
+  text-align: left;
+}
+
+div.museum-project #playpause {
+  background: none;
+  border: none;
+  width: 220px;
+  height: 220px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  margin: auto;
+  background-size: contain;
+  background-position: center;
+  z-index: 100;
+}
+div.museum-project .test {
+  position: relative;
+}
+div.museum-project .small-playpause {
+  background: rgba(33, 33, 33, 0.8);
+  border: none;
+  width: 68px;
+  height: 48px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  margin: auto;
+  background-size: contain;
+  background-position: center;
+  border-radius: 10px;
+}
+
+div.museum-project .small-playpause img {
+  padding-top: 13.57px;
+  padding-left: var(--font2);
+}
+div.museum-project #video {
+  max-width: var(--width);
+}
+div.museum-project #controls {
+  height: 85px;
+  width: 100%;
+  background: #000;
+  bottom: 5px;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 26px 50px 6fr 58px 1fr 86px;
+  align-items: center;
+  justify-content: space-between;
+}
+div.museum-project .progress-block {
+  width: 95%;
+}
+div.museum-project .progress {
+  background: linear-gradient(
+    to right,
+    #710707,
+    #710707 40%,
+    #c4c4c4 40%,
+    #c4c4c4 100%
+  );
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+}
+div.museum-project .play {
+  height: 8px;
+  width: 100%;
+}
+div.museum-project .volume {
+  height: 8px;
+  width: 155px;
+}
+div.museum-project .progress::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  background: #fff;
+}
+
+div.museum-project #btnPlayPause {
+  background: none;
+  border: none;
+  width: 36px;
+  height: 30px;
+  margin-left: 30px;
+  padding-top: 4px;
+}
+
+div.museum-project #volume {
+  background: none;
+  border: none;
+  padding-top: 11px;
+}
+
+div.museum-project #btnFullScreen {
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  position: relative;
+  display: block;
+  padding-right: 20px;
+  justify-self: center;
+}
+div.museum-project #btnFullScreen img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+div.museum-project #overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 10;
+  cursor: pointer;
+}
+div.museum-project #buying-form {
+  position: fixed;
+  margin: 0 auto;
+  max-width: var(--width);
+  max-height: 845px;
+  top: 2%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 11;
+  transition: 0.3s linear;
+  transform: translateX(-150%);
+  visibility: hidden;
+}
+div.museum-project #buying-central-block {
+  width: 970px;
+  height: 663px;
+  margin: 0px auto;
+  padding: 91px 0;
+  display: grid;
+  grid-template-columns: 400px 530px;
+  grid-template-rows: 663px;
+  column-gap: 40px;
+  align-items: center;
+  box-sizing: border-box;
+}
+div.museum-project #input-forms {
+  display: grid;
+  grid-template-columns: 190px 190px;
+  grid-template-rows: 183px repeat(5, 45px) 135px;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+div.museum-project #pay {
+  border: 1px solid black;
+  height: 663px;
+}
+div.museum-project #close-icon {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+div.museum-project input[type="date"],
+div.museum-project input[type="time"] {
+  box-sizing: border-box;
+  height: 45px;
+  width: 190px;
+  border: 1px solid #000;
+}
+div.museum-project input[type="text"],
+div.museum-project input[type="email"],
+div.museum-project input[type="tel"] {
+  height: 45px;
+  width: 400px;
+  border: 1px solid #000;
+}
+div.museum-project span#booking {
+  font-family: "Forum-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  color: #9d8665;
+  text-transform: uppercase;
+}
+
+div.museum-project .form-header {
+  grid-column: 1 / span 2;
+  border-bottom: 3px solid #740c11;
+  height: 143px;
+  margin-bottom: 40px;
+}
+div.museum-project .form-header > span:last-child {
+  font-size: var(--font1);
+  font-family: "roboto-regular";
+  margin-top: 15px;
+  color: #710707;
+  display: block;
+}
+div.museum-project input[type="text"],
+div.museum-project input[type="email"],
+div.museum-project input[type="tel"],
+div.museum-project select {
+  grid-column: span 2;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+div.museum-project #tickets-amount {
+  width: 400px;
+  height: 135px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 167px 120px;
+  grid-template-rows: 35px 25px 25px;
+  column-gap: 105px;
+  row-gap: 15px;
+  padding-top: 10px;
+}
+div.museum-project .overlay-btn {
+  width: 105px;
+  height: 25px;
+  display: grid;
+  grid-template-columns: 35px 39px 35px;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+div.museum-project #tick-head {
+  grid-column: 2 span;
+}
+div.museum-project .basic-btn {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+div.museum-project .senior-btn {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+div.museum-project .smallsteps {
+  font-family: "roboto-bold";
+  font-size: var(--font1);
+  background: #000;
+  padding: 0px;
+  color: #fff;
+  border-top: 2px solid #000;
+  border-left: none;
+}
+div.museum-project input.smallnumber {
+  font-family: "roboto";
+  font-size: var(--font1);
+  text-align: center;
+  padding: 0px;
+
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+div.museum-project #tickets-amount span.age {
+  padding-left: 15px;
+}
+div.museum-project #pay {
+  position: relative;
+  display: grid;
+  grid-template-columns: 470px;
+  grid-template-rows: 151px 117px 251px 45px;
+  padding: 25px 30px;
+}
+div.museum-project .summary-amount {
+  background-color: #000;
+  width: 32px;
+  height: 20px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  font-size: var(--font1);
+  margin-top: 3px;
+  margin-left: 3px;
+  box-sizing: border-box;
+}
+
+div.museum-project #book {
+  width: 220px;
+  height: 45px;
+  bottom: 26px;
+  right: 30px;
+  position: absolute;
+  background: #710707;
+  color: #fff;
+  font-family: "Roboto-regular";
+  font-size: var(--font2);
+  text-align: center;
+  padding-top: 12px;
+}
+
+div.museum-project #overview {
+  display: grid;
+  grid-template-columns: 200px 150px;
+  grid-template-rows: 1fr;
+  justify-content: space-between;
+}
+
+div.museum-project #discover-louvre {
+  display: inline;
+}
+div.museum-project #discover-louvre div {
+  cursor: pointer;
+}
+
+div.museum-project #overview-text {
+  font-family: "roboto-medium";
+  font-size: var(--font4);
+  padding-bottom: 5px;
+}
+div.museum-project #tour {
+  font-family: "roboto-medium";
+  font-size: var(--font2);
+  line-height: 26px;
+  color: #740c11;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+div.museum-project #overview > div div {
+  text-align: left;
+  margin: 2px 0;
+}
+
+div.museum-project #overview > div img {
+  margin-top: 5px;
+  margin-right: 10px;
+}
+div.museum-project #central-block {
+  display: grid;
+  grid-template-columns: 42px 130px 298px;
+  grid-template-rows: 33.5px 33.5px;
+  margin-top: 22px;
+  font-family: "Roboto-regular";
+  font-size: var(--font2);
+  border-bottom: 2px solid #740c11;
+  height: 76px;
+}
+
+div.museum-project .currency {
+  display: flex;
+  margin-left: auto;
+}
+div.museum-project #totalsum {
+  display: grid;
+  grid-template-columns: 80px 64px;
+  justify-content: space-between;
+  height: 38px;
+  margin: 0px;
+}
+div.museum-project #totalsum div:first-child {
+  font-family: "roboto-regular";
+  font-size: var(--font4);
+  position: absolute;
+  top: 277px;
+}
+div.museum-project #totalsum div:last-child {
+  display: block;
+  font-family: "roboto-bold";
+  font-size: var(--font4);
+  position: absolute;
+  top: 277px;
+  right: 30px;
+}
+div.museum-project #card1 {
+  position: absolute;
+  top: 325px;
+  left: 30px;
+  z-index: 11;
+}
+div.museum-project #card2 {
+  position: absolute;
+  top: 355px;
+  right: 30px;
+  z-index: 10;
+}
+
+div.museum-project #comparison {
+  width: 95%;
+  height: 95%;
+  margin: 1vw auto;
+  max-height: 650px;
+  max-width: 650px;
+  overflow: hidden;
+}
+div.museum-project #comparison figure {
+  background-image: url(assets/img/after.jpg);
+  background-size: cover;
+  font-size: 0;
+  height: 100%;
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+div.museum-project #divisor {
+  background-image: url(assets/img/before.jpg);
+  background-size: cover;
+  bottom: 0;
+  box-shadow: 10px 0 15px -13px #000;
+  height: 100%;
+  max-width: 98.6%;
+  min-width: 0.6%;
+  overflow: visible;
+  position: absolute;
+  width: 50%;
+}
+div.museum-project #circle {
+  width: 40px;
+  height: 40px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  background: url(assets/svg/round1.svg) no-repeat;
+  background-size: cover;
+  bottom: 0;
+  overflow: visible;
+  position: absolute;
+  top: 46.5%;
+  left: 46.5%;
+}
+div.museum-project #circle::before {
+  bottom: 50%;
+  margin-bottom: 25px;
+  box-shadow: 0 0 10px rgb(12, 12, 12);
+}
+
+div.museum-project #circle::after {
+  top: 50%;
+  margin-top: 24px;
+  box-shadow: 0 0 5px rgb(12, 12, 12);
+}
+
+div.museum-project #circle::before,
+div.museum-project #circle::after {
+  content: " ";
+  display: block;
+  width: 5px;
+  background: #fff;
+  height: 9999px;
+  position: absolute;
+  left: 50%;
+  margin-left: -2.5px;
+}
+
+div.museum-project input#slider {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  background: transparent;
+  cursor: col-resize;
+  height: 100vw;
+  left: 0;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  position: relative;
+  top: -100vw;
+  width: 100%;
+}
+div.museum-project input#slider::-moz-range-track {
+  background: transparent;
+}
+div.museum-project input#slider::-ms-track {
+  border: none;
+  background-color: transparent;
+  height: 100vw;
+  left: 0;
+  outline: none;
+  position: relative;
+  top: -100vw;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: col-resize;
+  color: transparent;
+}
+div.museum-project input#slider::-ms-fill-lower {
+  background-color: transparent;
+}
+div.museum-project input#slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 100vw;
+  width: 0.5%;
+  opacity: 0;
+}
+div.museum-project input#slider::-moz-range-thumb {
+  -moz-appearance: none;
+  height: 100vw;
+  width: 0.5%;
+  opacity: 0;
+}
+div.museum-project input#slider::-ms-thumb {
+  height: 100vw;
+  width: 0.5%;
+  opacity: 0;
+}
+div.museum-project input#slider::-ms-tooltip {
+  display: none;
+}
+div.museum-project #compare::before {
+  background: url(https://webdevtrick.com/wp-content/uploads/comparision.png)
+    no-repeat scroll 0 center transparent;
+  background-size: contain;
+  content: " ";
+  float: right;
+  height: 100%;
+  margin-right: -34px;
+  position: relative;
+  top: 0;
+  width: 64px;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --font1: 18px;
+    --font2: 20px;
+    --font3: 24px;
+    --font4: 28px;
+    --padding: 60px;
+    --width: 984px;
+  }
+  div.museum-project a {
+    text-decoration: none;
+  }
+  div.museum-project .container {
+    width: 100%;
+    max-width: 984px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  div.museum-project #welcome-nav ul {
+    width: 122px;
+    height: 263px;
+    padding-top: 35px;
+    padding-left: 0px;
+    display: none;
+    box-sizing: border-box;
+  }
+  div.museum-project .words {
+    padding: 0px;
+    color: #fff;
+    font-family: "roboto-regular";
+  }
+  div.museum-project .burger-nav {
+    display: block;
+  }
+  div.museum-project .logo {
+    width: 200px;
+  }
+  div.museum-project .section.container.header-container {
+    margin: 0px 20px;
+  }
+  div.museum-project .header-container {
+    display: grid;
+    width: 91%;
+    grid-template-columns: 200px 200px;
+    position: relative;
+    justify-content: start;
+  }
+  div.museum-project .header-container > div {
+    justify-self: start;
+  }
+  div.museum-project #welcome-nav {
+    display: block;
+  }
+  div.museum-project #welcome-nav .burger-line {
+    padding-left: 43px;
+  }
+  div.museum-project nav div {
+    padding-left: 43px;
+    height: 23px;
+    letter-spacing: 2px;
+  }
+  div.museum-project #welcome-nav li {
+    height: 50px;
+  }
+  div.museum-project .section {
+    padding: 60px 20px;
+    margin: 0 auto;
+  }
+  div.museum-project .sl-img img {
+    width: 700px;
+  }
+
+  div.museum-project header .section {
+    padding: 48px 0px;
+  }
+
+  div.museum-project .header-container nav {
+    display: none;
+  }
+
+  div.museum-project .welcome {
+    height: 585px;
+    background: url("assets/img/1.1.jpg") no-repeat;
+    background-position: 100% -1%;
+  }
+
+  div.museum-project h1,
+  div.museum-project h2 {
+    font-size: 50px;
+  }
+  div.museum-project h3 {
+    letter-spacing: 0.03em;
+  }
+
+  div.museum-project .welcome h2 {
+    margin-bottom: 50px;
+  }
+
+  div.museum-project .welcome-text div {
+    width: 300px;
+    height: 60px;
+    padding: 17px 0 0 0;
+  }
+  div.museum-project #discover-louvre {
+    width: 300px;
+    height: 60px;
+    padding-top: 17px;
+  }
+
+  div.museum-project .welcome-text {
+    margin-top: 50px;
+    top: 0px;
+  }
+  div.museum-project .welcome-slider-img {
+    position: relative;
+    height: 585px;
+    width: 100%;
+    max-width: 1440px;
+    overflow: hidden;
+    padding: 0;
+  }
+  div.museum-project .welcome-slider {
+    height: 120px;
+    width: 700px;
+    background-color: #000;
+    margin: 65px 0px 0px 0px;
+    float: right;
+    display: grid;
+    grid-template-columns: 340px 148px 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  div.museum-project .list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1 / 2;
+    font-family: "roboto-regular";
+    font-size: var(--font2);
+    width: 71px;
+    padding-left: 224px;
+    padding-right: 45px;
+  }
+
+  div.museum-project .dots {
+    grid-column: 2 / 3;
+    width: 160px;
+    height: 12px;
+  }
+
+  div.museum-project .dots div {
+    height: 12px;
+    width: 12px;
+  }
+
+  div.museum-project .arrows {
+    padding-left: 45px;
+  }
+
+  div.museum-project .visiting-main {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 60px;
+    /* column-gap: 108px; */
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 768px;
+  }
+  div.museum-project .border {
+    width: 150px;
+    height: 1px;
+    box-sizing: border-box;
+    border: 1px solid #710707;
+    transition-duration: 1s;
+  }
+  div.museum-project .google-view {
+    border-top: none;
+  }
+  div.museum-project .visiting-main a:hover > .google-view {
+    border-top: none;
+  }
+  div.museum-project .visiting-main a:hover > .border {
+    width: 330px;
+  }
+  div.museum-project .visiting-main img {
+    width: 330px;
+    height: 215px;
+  }
+
+  div.museum-project .virtual {
+    font-size: var(--font2);
+    font-family: "roboto-thin";
+    margin: 10px 0;
+  }
+  div.museum-project .panorama {
+    font-size: var(--font1);
+    font-family: "roboto-thin";
+    margin: 10px 0;
+  }
+  div.museum-project .visiting-header,
+  div.museum-project .explore-header,
+  div.museum-project .tickets-header,
+  div.museum-project .contacts-header {
+    display: flex;
+    align-items: flex-end;
+    width: 97%;
+    height: 95px;
+    border-bottom: 3px solid #710707;
+  }
+  div.museum-project #explore .container br {
+    display: none;
+  }
+  div.museum-project #explore {
+    padding-bottom: 0px;
+  }
+  div.museum-project #explore .container p {
+    margin: 0;
+    line-height: 35px;
+  }
+  div.museum-project #explore .container {
+    height: 1009px;
+    display: block;
+  }
+  div.museum-project #explore .container .explore-txt p:last-child {
+    display: none;
+  }
+  div.museum-project .explore-txt p {
+    font-size: 1.25rem;
+  }
+  div.museum-project .explore-img {
+    display: grid;
+    grid-template-columns: 440px 1fr 280px;
+    grid-template-rows: 1fr;
+    position: relative;
+    width: 720px;
+    padding-top: 62px;
+    margin: 0 auto 60px auto;
+  }
+  div.museum-project #before {
+    background: url("assets/img/before.jpg") no-repeat;
+    height: 700px;
+    width: 440px;
+    overflow: hidden;
+    background-position: 0% 0%;
+    padding: 0;
+    z-index: 2;
+  }
+
+  div.museum-project #after {
+    background: url("assets/img/after.jpg") no-repeat;
+    height: 700px;
+    width: 280px;
+    overflow: hidden;
+    background-position: 100% 100%;
+    padding: 0;
+    z-index: 3;
+  }
+  div.museum-project #explore-slider {
+    position: absolute;
+    left: 420px;
+    top: 63px;
+    z-index: 9;
+    height: 700px;
+  }
+  div.museum-project .dark {
+    color: white;
+  }
+  div.museum-project .explore-txt,
+  div.museum-project .video-header > p {
+    font-family: "roboto-thin";
+    font-size: var(--font2);
+    line-height: 35px;
+  }
+
+  div.museum-project .explore-header,
+  div.museum-project .tickets-header,
+  div.museum-project .contacts-header {
+    margin-bottom: 60px;
+  }
+
+  div.museum-project .explore-header p {
+    margin: 20px 0;
+  }
+  div.museum-project video {
+    width: 100%;
+  }
+  div.museum-project .video-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    margin-bottom: 53px;
+    justify-content: space-between;
+  }
+
+  div.museum-project .video-header > p {
+    display: none;
+  }
+
+  div.museum-project .video-another {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 170px;
+    margin: 40px 0;
+  }
+
+  div.museum-project .video-dots {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(7, 12px);
+    grid-template-rows: 12px;
+    column-gap: 20px;
+    width: 200px;
+    margin: 0 auto;
+  }
+  div.museum-project .video-dots button {
+    position: relative;
+    width: 10px;
+    height: 12px;
+    background: none;
+    border: none;
+  }
+  div.museum-project .video-dots button img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+
+  div.museum-project .picture-container {
+    overflow-y: hidden;
+    height: calc(700px + 60vw);
+  }
+
+  div.museum-project .picture-inner-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 29%);
+    column-gap: 36px;
+  }
+  div.museum-project .picture-inner-container img {
+    padding-bottom: 24px;
+    width: 98%;
+  }
+  div.museum-project .picture-inner-container div {
+    width: 98%;
+  }
+  div.museum-project #gallery {
+    padding-bottom: 0px;
+  }
+  div.museum-project .gallery {
+    padding-bottom: 60px;
+  }
+
+  div.museum-project .picture-inner-container::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 23%,
+      rgba(255, 255, 255, 0) 40%
+    );
+    z-index: 1;
+  }
+
+  div.museum-project h4 {
+    font-family: "roboto-bold";
+    font-size: var(--font3);
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+
+  div.museum-project .tickets {
+    display: grid;
+    grid-template-columns: 1fr 246px;
+    column-gap: max(15px, 5%);
+    box-sizing: border-box;
+    justify-content: normal;
+  }
+  div.museum-project
+    #tickets
+    > div.container
+    > div.tickets
+    > div.tickets-txt
+    > div
+    > img {
+    width: 100%;
+  }
+
+  div.museum-project .tickets-type {
+    display: block;
+    position: relative;
+  }
+  div.museum-project .tickets-type > div:first-child {
+    display: none;
+  }
+  div.museum-project .cont,
+  div.museum-project .tickets-type p {
+    font-family: "roboto";
+    font-size: var(--font2);
+  }
+
+  div.museum-project
+    #tickets
+    > div.container
+    > div.tickets
+    > div.tickets-type
+    > div:nth-child(2)
+    > p:nth-child(2) {
+    position: absolute;
+    top: 27px;
+  }
+  div.museum-project
+    #tickets
+    > div.container
+    > div.tickets
+    > div.tickets-type
+    > div:nth-child(2)
+    > p:nth-child(4) {
+    margin: 29px 0px 10px 0;
+    float: left;
+  }
+  div.museum-project #amount,
+  div.museum-project #total {
+    float: left;
+  }
+
+  div.museum-project #total {
+    margin-top: 25px;
+  }
+  div.museum-project .number {
+    all: unset;
+    text-align: center;
+  }
+  div.museum-project #buy {
+    width: 175px;
+    height: 50px;
+    background: black;
+    color: #fff;
+    font-family: "roboto-thin";
+    font-size: var(--font2);
+    margin-top: 44px;
+    float: left;
+  }
+  div.museum-project #buy:hover {
+    width: 183px;
+    height: 53px;
+    font-size: 24px;
+  }
+  div.museum-project .btn {
+    width: 175px;
+    height: 50px;
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  div.museum-project .steps {
+    font-family: "roboto-bold";
+    font-size: var(--font4);
+    background: #fff;
+    border: none;
+  }
+
+  div.museum-project input.number {
+    font-family: "roboto";
+    font-size: var(--font2);
+    text-align: center;
+  }
+
+  div.museum-project #parallax {
+    width: 100%;
+    height: 400px;
+    background-image: url("assets/img/parallax.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  div.museum-project .contacts {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 454px;
+  }
+  div.museum-project .contacts-txt span {
+    font-family: "roboto";
+    font-size: var(--font2);
+    padding-left: 0px;
+    margin-bottom: 25px;
+    display: block;
+    color: black;
+  }
+  div.museum-project .contacts-img {
+    background: url(assets/img/map.jpg) no-repeat;
+    width: 100%;
+  }
+  div.museum-project .footer-container {
+    display: grid;
+    grid-template-columns: 240px 313px 1fr;
+    position: relative;
+    height: 190px;
+    padding-bottom: 0px;
+    border-bottom: 3px solid #666666;
+  }
+  div.museum-project .social {
+    width: 340px;
+    height: 48px;
+    display: grid;
+    grid-template-columns: repeat(5, 48px);
+    column-gap: 25px;
+    align-items: center;
+  }
+  div.museum-project .social-footer {
+    position: absolute;
+    bottom: 55px;
+    right: 0px;
+  }
+  div.museum-project .social div {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #666666;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+  div.museum-project .social div:hover {
+    border: 3px solid #9d8665;
+  }
+  div.museum-project .social div:hover > img {
+    filter: invert(60%) sepia(6%) saturate(1929%) hue-rotate(356deg)
+      brightness(220%) contrast(88%);
+    padding-top: 9px;
+    padding-left: 9px;
+  }
+
+  div.museum-project .social div img {
+    padding-top: 11px;
+    padding-left: 11px;
+  }
+  div.museum-project .footer-container nav {
+    position: relative;
+  }
+  div.museum-project .navigation-bottom ul {
+    margin: 0;
+    padding-left: 0;
+    width: 313px;
+    height: 128px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 110px 110px;
+    grid-template-rows: 51px 51px 51px;
+    align-items: center;
+    text-align: left;
+    position: absolute;
+    top: 0px;
+  }
+
+  div.museum-project .navigation-bottom li {
+    display: block;
+    padding-bottom: 25px;
+  }
+
+  div.museum-project .footer-container div {
+    color: white;
+    font-family: "roboto-thin";
+    font-size: var(--font2);
+    padding: 0px;
+  }
+
+  div.museum-project .bottom {
+    display: grid;
+    grid-template-columns: 180px 1fr 180px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "roboto-thin";
+    font-size: var(--font2);
+  }
+  div.museum-project #username {
+    text-align: right;
+  }
+
+  div.museum-project .footer {
+    padding-bottom: 0px;
+  }
+
+  div.museum-project a #rsschool,
+  div.museum-project a #username {
+    text-align: center;
+    color: #fff;
+  }
+  div.museum-project .bottom > p {
+    text-align: left;
+  }
+
+  div.museum-project #playpause img {
+    background: none;
+    border: none;
+    width: 152px;
+    height: 152px;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    margin: auto;
+    background-size: contain;
+    background-position: center;
+  }
+  div.museum-project .test {
+    position: relative;
+  }
+  div.museum-project .small-playpause {
+    background: rgba(33, 33, 33, 0.8);
+    border: none;
+    width: 68px;
+    height: 48px;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    margin: auto;
+    background-size: contain;
+    background-position: center;
+    border-radius: 10px;
+  }
+
+  div.museum-project .small-playpause img {
+    padding-top: 13.57px;
+    padding-left: var(--font2);
+  }
+  div.museum-project #video {
+    max-width: var(--width);
+  }
+  div.museum-project #controls {
+    height: 60px;
+    width: 100%;
+    background: #000;
+    bottom: 5px;
+    grid-template-columns: 26px 50px 6fr 46px 1fr 86px;
+  }
+  div.museum-project .progress-block {
+    width: 95%;
+  }
+  div.museum-project .progress {
+    background: linear-gradient(
+      to right,
+      #710707,
+      #710707 40%,
+      #c4c4c4 40%,
+      #c4c4c4 100%
+    );
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+  }
+  div.museum-project .play {
+    height: 5px;
+    width: 100%;
+  }
+  div.museum-project .volume {
+    height: 5px;
+    width: 143px;
+  }
+  div.museum-project .progress::-webkit-slider-thumb {
+    width: 13px;
+    height: 13px;
+  }
+
+  div.museum-project #btnPlayPause {
+    background: none;
+    border: none;
+    width: 26px;
+    height: 30px;
+    padding-left: 30px;
+    padding-top: 4px;
+  }
+
+  div.museum-project #volume {
+    background: none;
+    border: none;
+    padding-top: 11px;
+  }
+  div.museum-project #volume > img {
+    width: 34px;
+    height: 28px;
+  }
+
+  div.museum-project #btnPlayPause > img {
+    width: 34px;
+    height: 34px;
+  }
+
+  div.museum-project #btnFullScreen {
+    width: 26px;
+    height: 26px;
+    padding-right: 40px;
+  }
+  div.museum-project #btnFullScreen img {
+    width: 26px;
+    height: 26px;
+  }
+
+  div.museum-project #buying-central-block {
+    width: 970px;
+    height: 663px;
+    margin: 0px auto;
+    padding: 91px 0;
+    display: grid;
+    grid-template-columns: 400px 530px;
+    grid-template-rows: 663px;
+    column-gap: 40px;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  div.museum-project #input-forms {
+    grid-template-rows: 143px repeat(5, 45px) 135px;
+  }
+  div.museum-project #close-icon {
+    right: 27px;
+  }
+
+  div.museum-project .form-header {
+    grid-column: 1 / span 2;
+    border-bottom: 3px solid #740c11;
+    height: 143px;
+    margin-bottom: 60px;
+  }
+  div.museum-project .form-header > span:last-child {
+    font-size: var(--font1);
+    font-family: "roboto-regular";
+    margin-top: 15px;
+    color: #710707;
+    display: block;
+  }
+
+  div.museum-project #tickets-amount {
+    grid-template-columns: 147px 105px;
+    grid-template-rows: 35px 25px 25px;
+    column-gap: 120px;
+    row-gap: 15px;
+    padding-top: 10px;
+  }
+  div.museum-project #buying-form {
+    position: fixed;
+    margin: 0 auto;
+    max-width: 1024px;
+    max-height: 845px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 11;
+    transition: 0.3s linear;
+    transform: translateX(-150%);
+    visibility: hidden;
+  }
+  div.museum-project #overlay {
+    position: fixed;
+    display: none;
+    width: 1024px;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 10;
+    cursor: pointer;
+  }
+  div.museum-project .overlay-btn {
+    width: 105px;
+    height: 25px;
+    display: grid;
+    grid-template-columns: 35px 35px 35px;
+    padding-left: 5px;
+  }
+
+  div.museum-project #pay {
+    position: relative;
+    display: grid;
+    grid-template-columns: 470px;
+    grid-template-rows: 151px 117px 241px 45px;
+    padding: 25px 26px;
+    box-sizing: border-box;
+  }
+  div.museum-project .summary-amount {
+    background-color: #000;
+    width: 32px;
+    height: 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    font-size: var(--font1);
+    margin-top: 3px;
+    margin-left: 3px;
+    box-sizing: border-box;
+  }
+
+  div.museum-project #book {
+    width: 220px;
+    height: 45px;
+    bottom: 26px;
+    right: 30px;
+    position: absolute;
+    background: #710707;
+    color: #fff;
+    font-family: "Roboto-regular";
+    font-size: var(--font2);
+    text-align: center;
+    padding-top: 12px;
+    box-sizing: border-box;
+  }
+
+  div.museum-project #overview {
+    display: grid;
+    grid-template-columns: 200px 150px;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+  }
+
+  div.museum-project #discover-louvre {
+    display: inline;
+  }
+  div.museum-project #discover-louvre div {
+    cursor: pointer;
+  }
+
+  div.museum-project #overview-text {
+    font-family: "roboto-medium";
+    font-size: var(--font4);
+    padding-bottom: 5px;
+  }
+  div.museum-project #tour {
+    font-family: "roboto-medium";
+    font-size: var(--font2);
+    line-height: 26px;
+    color: #740c11;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  div.museum-project #btnPlayPause {
+    padding-left: 0px;
+  }
+  div.museum-project #btnPlayPause > img {
+    width: 28px;
+    height: 28px;
+  }
+  div.museum-project #overview > div div {
+    text-align: left;
+    margin: 2px 0;
+  }
+
+  div.museum-project #overview > div img {
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+  div.museum-project #central-block {
+    display: grid;
+    grid-template-columns: 42px 130px 298px;
+    grid-template-rows: 33.5px 33.5px;
+    margin-top: 22px;
+    font-family: "Roboto-regular";
+    font-size: var(--font2);
+    border-bottom: 2px solid #740c11;
+    height: 76px;
+  }
+
+  div.museum-project .currency {
+    display: flex;
+    margin-left: auto;
+  }
+  div.museum-project #totalsum {
+    display: grid;
+    grid-template-columns: 80px 64px;
+    justify-content: space-between;
+    height: 38px;
+    margin: 0px;
+  }
+  div.museum-project #totalsum div:first-child {
+    font-family: "roboto-regular";
+    font-size: var(--font4);
+    position: absolute;
+    top: 277px;
+  }
+  div.museum-project #totalsum div:last-child {
+    display: block;
+    font-family: "roboto-bold";
+    font-size: var(--font4);
+    position: absolute;
+    top: 277px;
+    right: 30px;
+  }
+  div.museum-project #card1 {
+    position: absolute;
+    top: 325px;
+    left: 30px;
+    z-index: 11;
+  }
+  div.museum-project #card2 {
+    position: absolute;
+    top: 355px;
+    right: 30px;
+    z-index: 10;
+  }
+}
+@media (max-width: 768px) {
+  :root {
+    --font1: 16px;
+    --font2: 18px;
+    --font3: 20px;
+    --font4: 32px;
+    --padding: 40px;
+    --width: 728px;
+  }
+  div.museum-project a {
+    text-decoration: none;
+  }
+  div.museum-project .container {
+    width: 100%;
+    max-width: var(--width);
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  div.museum-project #welcome-nav ul {
+    width: 122px;
+    height: 263px;
+    padding-top: 35px;
+    padding-left: 0px;
+    display: none;
+    box-sizing: border-box;
+  }
+  div.museum-project .words {
+    padding: 0px;
+    color: #fff;
+    font-family: "roboto-regular";
+  }
+  div.museum-project .burger-nav {
+    display: block;
+  }
+  div.museum-project .logo {
+    width: 200px;
+  }
+  div.museum-project .section.container.header-container {
+    margin: 0px 20px;
+  }
+  div.museum-project .header-container {
+    display: grid;
+    width: 500px;
+    grid-template-columns: 200px 200px;
+    position: relative;
+    justify-content: start;
+  }
+  div.museum-project .header-container > div {
+    justify-self: start;
+  }
+  div.museum-project #welcome-nav {
+    display: block;
+  }
+  div.museum-project #welcome-nav .burger-line {
+    padding-left: 43px;
+  }
+  div.museum-project nav div {
+    padding-left: 43px;
+    height: 23px;
+    letter-spacing: 2px;
+  }
+  div.museum-project #welcome-nav li {
+    height: 50px;
+  }
+  div.museum-project .section {
+    padding: 40px 20px;
+    margin: 0 auto;
+  }
+
+  div.museum-project header .section {
+    padding: 34.5px 0px;
+  }
+
+  div.museum-project .header-container nav {
+    display: none;
+  }
+
+  div.museum-project .welcome {
+    height: 861px;
+    background: url("assets/img/welcome-img-768.jpg") no-repeat;
+    background-position: 100% 68%;
+  }
+
+  div.museum-project h1,
+  div.museum-project h2 {
+    font-size: 40px;
+  }
+  div.museum-project h3 {
+    letter-spacing: 0.03em;
+  }
+
+  div.museum-project .welcome h2 {
+    margin-bottom: 25px;
+  }
+
+  div.museum-project .welcome-text div {
+    width: 300px;
+    height: 60px;
+    padding: 17px 0 0 0;
+  }
+  div.museum-project #discover-louvre {
+    width: 300px;
+    height: 60px;
+    padding-top: 17px;
+  }
+
+  div.museum-project .welcome-text {
+    margin-top: 0px;
+
+    text-align: center;
+  }
+  div.museum-project h2 {
+    letter-spacing: 2px;
+  }
+  div.museum-project h1,
+  div.museum-project h2 {
+    line-height: 60px;
+  }
+  div.museum-project #discover-louvre,
+  div.museum-project #discover-louvre a {
+    display: none;
+  }
+  div.museum-project .welcome-slider {
+    height: 100px;
+    width: 700px;
+    background-color: #000;
+    margin: 410px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: 255px 148px 1fr;
+    grid-template-rows: 1fr;
+  }
+  div.museum-project .arrows {
+    width: 80px;
+  }
+  div.museum-project .list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1 / 2;
+    font-family: "roboto-regular";
+    font-size: var(--font2);
+    width: 71px;
+    padding-left: 140px;
+    padding-right: 45px;
+  }
+
+  div.museum-project .dots {
+    grid-column: 2 / 3;
+    width: 160px;
+    height: 12px;
+  }
+
+  div.museum-project .dots div {
+    height: 12px;
+    width: 12px;
+  }
+
+  div.museum-project .arrows {
+    padding-left: 45px;
+  }
+
+  div.museum-project .visiting-main {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 280px);
+    grid-template-rows: repeat(3, 301px);
+    row-gap: 40px;
+    column-gap: 56px;
+    margin: 0 auto;
+    width: 620px;
+  }
+  div.museum-project .border {
+    width: 150px;
+    height: 1px;
+    box-sizing: border-box;
+    border: 1px solid #710707;
+    transition-duration: 1s;
+  }
+  div.museum-project .google-view {
+    border-top: none;
+  }
+  div.museum-project .visiting-main a:hover > .google-view {
+    border-top: none;
+  }
+  div.museum-project .visiting-main a:hover > .border {
+    width: 280px;
+  }
+  div.museum-project .visiting-main img {
+    width: 280px;
+    height: 180px;
+  }
+
+  div.museum-project .virtual {
+    font-size: var(--font2);
+    font-family: "roboto-thin";
+    margin: 10px 0;
+  }
+  div.museum-project .panorama {
+    font-size: var(--font1);
+    font-family: "roboto-thin";
+    margin: 10px 0;
+  }
+  div.museum-project .test:last-child {
+    display: none;
+  }
+  div.museum-project .visiting-header,
+  div.museum-project .explore-header {
+    display: flex;
+    align-items: flex-end;
+    height: 50px;
+    border-bottom: 3px solid #710707;
+  }
+  div.museum-project .tickets-header,
+  div.museum-project .contacts-header {
+    height: 90px;
+  }
+  div.museum-project #explore .container br {
+    display: none;
+  }
+  div.museum-project #explore {
+    padding-bottom: 0px;
+  }
+  div.museum-project #explore .container p {
+    margin: 0;
+    line-height: 35px;
+  }
+  div.museum-project #explore .container {
+    height: 868px;
+    display: block;
+  }
+  div.museum-project #explore .container .explore-txt p {
+    display: none;
+  }
+  div.museum-project .explore-img {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 700px;
+    width: 100%;
+    position: relative;
+    max-width: 728px;
+    padding-top: 0px;
+    margin: 0 auto 40px auto;
+    box-sizing: border-box;
+  }
+  div.museum-project #before {
+    /* background: url("assets/img/before.jpg") no-repeat; */
+    height: auto;
+    width: 50%;
+    max-width: 441px;
+    overflow: hidden;
+    /* background-position: 0% 0%; */
+    padding: 0;
+    position: absolute;
+  }
+  div.museum-project #before img {
+    z-index: 3;
+  }
+  div.museum-project #after {
+    /* background: url("assets/img/after.jpg") no-repeat; */
+    height: auto;
+    width: 100%;
+    max-width: 287px;
+    overflow: hidden;
+    left: 50%;
+    /* background-position: 100% 100%; */
+    padding: 0;
+
+    position: absolute;
+  }
+  div.museum-project #after {
+    z-index: 2;
+  }
+  div.museum-project #explore-slider {
+    position: absolute;
+    left: 420px;
+    top: 0px;
+    z-index: 9;
+    height: 700px;
+  }
+  div.museum-project .dark {
+    color: white;
+  }
+
+  div.museum-project .explore-header,
+  div.museum-project .tickets-header,
+  div.museum-project .contacts-header {
+    margin-bottom: 40px;
+  }
+
+  div.museum-project .explore-header p {
+    margin: 20px 0;
+  }
+  div.museum-project video {
+    width: 100%;
+  }
+  div.museum-project .video-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+
+  div.museum-project .video-header > p {
+    display: none;
+  }
+
+  div.museum-project .video-another {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 199px;
+    margin: 20px 0;
+  }
+
+  div.museum-project .video-dots {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(7, 10px);
+    grid-template-rows: 10px;
+    column-gap: 20px;
+    width: 190px;
+    margin: 0 auto;
+  }
+  div.museum-project .video-dots button {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background: none;
+    border: none;
+  }
+  div.museum-project .video-dots button img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+
+  div.museum-project .picture-container {
+    overflow-y: hidden;
+    height: calc(600px + 60vw);
+  }
+  div.museum-project .welcome {
+    background: none;
+  }
+  div.museum-project .sl-img:before {
+    display: none;
+  }
+  div.museum-project .sl-img {
+    top: 220px;
+    width: 95%;
+    left: 3vw;
+  }
+  div.museum-project .sl-img img {
+    width: 100%;
+  }
+  div.museum-project .welcome-text {
+    position: relative;
+  }
+  div.museum-project .welcome-slider {
+    margin: 310px 0px 0px 0px;
+  }
+  div.museum-project .welcome-slider-img {
+    height: 100%;
+  }
+  div.museum-project .picture-inner-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 29%);
+    column-gap: 2%;
+    margin-left: 5px;
+  }
+  div.museum-project .picture-inner-container img {
+    padding-bottom: 24px;
+    width: 98%;
+  }
+  div.museum-project .picture-inner-container div {
+    width: 98%;
+  }
+  div.museum-project #gallery {
+    padding-bottom: 0px;
+  }
+  div.museum-project .gallery {
+    padding-bottom: 40px;
+  }
+
+  div.museum-project .picture-inner-container::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 2600px;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 23%,
+      rgba(255, 255, 255, 0) 40%
+    );
+    z-index: 1;
+  }
+
+  div.museum-project h4 {
+    font-family: "roboto-bold";
+    font-size: 28px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    letter-spacing: 1.65px;
+  }
+  div.museum-project .tickets-type div p {
+    font-size: 22px;
+  }
+  div.museum-project .tickets-header h2,
+  div.museum-project .contacts-header h2 {
+    padding-bottom: 40px;
+  }
+  div.museum-project .contacts-txt h4 {
+    font-size: 20px;
+    letter-spacing: 0px;
+  }
+  div.museum-project .tickets {
+    display: grid;
+    grid-template-columns: 444px 175px;
+    grid-template-rows: 340px;
+    column-gap: 40px;
+    box-sizing: border-box;
+    justify-content: normal;
+  }
+  div.museum-project
+    #tickets
+    > div.container
+    > div.tickets
+    > div.tickets-txt
+    > div
+    > img {
+    width: 444px;
+    height: 340px;
+  }
+  div.museum-project #tickets .container {
+    height: 553px;
+    box-sizing: border-box;
+  }
+  div.museum-project .tickets-type {
+    display: block;
+    position: relative;
+  }
+  div.museum-project .tickets-type > div:first-child {
+    display: none;
+  }
+  .cont,
+  div.museum-project .tickets-type p {
+    font-family: "roboto";
+    font-size: var(--font2);
+  }
+
+  div.museum-project
+    #tickets
+    > div.container
+    > div.tickets
+    > div.tickets-type
+    > div:nth-child(2)
+    > p:nth-child(2) {
+    position: absolute;
+    top: 49px;
+  }
+  div.museum-project
+    #tickets
+    > div.container
+    > div.tickets
+    > div.tickets-type
+    > div:nth-child(2)
+    > p:nth-child(4) {
+    margin: 25px 0px 10px 0;
+    float: left;
+  }
+  div.museum-project #amount,
+  div.museum-project #total {
+    float: left;
+  }
+  div.museum-project #amount {
+    margin-bottom: 75px;
+  }
+  div.museum-project #total {
+    margin-top: 39px;
+  }
+  div.museum-project .number {
+    all: unset;
+    text-align: center;
+  }
+  div.museum-project #buy {
+    width: 175px;
+    height: 50px;
+    background: black;
+    color: #fff;
+    font-family: "roboto-thin";
+    font-size: var(--font2);
+    margin-top: 0px;
+  }
+  div.museum-project #buy:hover {
+    width: 183px;
+    height: 53px;
+    font-size: 24px;
+  }
+  div.museum-project .btn {
+    width: 175px;
+    height: 50px;
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  div.museum-project .steps {
+    font-family: "roboto-bold";
+    font-size: var(--font4);
+    background: #fff;
+    border: none;
+  }
+
+  div.museum-project input.number {
+    font-family: "roboto";
+    font-size: var(--font2);
+    text-align: center;
+  }
+
+  div.museum-project #parallax {
+    width: 100%;
+    height: 300px;
+    background-image: url("assets/img/parallax.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  div.museum-project .contacts {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 400px;
+  }
+
+  div.museum-project .contacts-txt span {
+    font-family: "roboto";
+    font-size: var(--font2);
+    padding-left: 0px;
+    margin-bottom: 15px;
+    display: block;
+    color: black;
+  }
+
+  div.museum-project .footer-container {
+    display: grid;
+    grid-template-columns: 280px 313px 1fr;
+    position: relative;
+    height: 308px;
+    padding-bottom: 0px;
+    border-bottom: 3px solid #666666;
+  }
+  div.museum-project .social {
+    width: 340px;
+    height: 48px;
+    display: grid;
+    grid-template-columns: repeat(5, 48px);
+    column-gap: 25px;
+    align-items: center;
+  }
+  div.museum-project .social-footer {
+    position: absolute;
+    left: 280px;
+    padding-left: 0px;
+  }
+  div.museum-project .social-header {
+    justify-self: center;
+  }
+
+  div.museum-project p#username {
+    float: right;
+  }
+  div.museum-project .social div {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #666666;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+  div.museum-project .social div:hover {
+    border: 3px solid #9d8665;
+  }
+  div.museum-project .social div:hover > img {
+    filter: invert(60%) sepia(6%) saturate(1929%) hue-rotate(356deg)
+      brightness(220%) contrast(88%);
+    padding-top: 9px;
+    padding-left: 9px;
+  }
+
+  div.museum-project .social div img {
+    padding-top: 11px;
+    padding-left: 11px;
+  }
+  div.museum-project .footer-container nav {
+    position: relative;
+  }
+  div.museum-project .navigation-bottom ul {
+    margin: 0;
+    padding-left: 0;
+    width: 313px;
+    height: 128px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 110px 110px;
+    grid-template-rows: 51px 51px 51px;
+    align-items: center;
+    text-align: left;
+    position: absolute;
+    top: 0px;
+  }
+
+  div.museum-project .navigation-bottom li {
+    display: block;
+    padding-bottom: 25px;
+  }
+
+  div.museum-project .footer-container div {
+    color: white;
+    font-family: "roboto-thin";
+    font-size: var(--font2);
+    padding: 0px;
+  }
+
+  div.museum-project .bottom {
+    display: grid;
+    grid-template-columns: 180px 1fr 180px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "roboto-thin";
+    font-size: var(--font2);
+  }
+  div.museum-project #username {
+    text-align: right;
+  }
+
+  div.museum-project .footer {
+    padding-bottom: 0px;
+  }
+
+  div.museum-project a #rsschool,
+  div.museum-project a #username {
+    text-align: center;
+    color: #fff;
+  }
+  div.museum-project .bottom > p {
+    text-align: left;
+  }
+
+  div.museum-project #playpause img {
+    background: none;
+    border: none;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    margin: auto;
+    background-size: contain;
+    background-position: center;
+  }
+  div.museum-project .test {
+    position: relative;
+  }
+  div.museum-project .small-playpause {
+    background: rgba(33, 33, 33, 0.8);
+    border: none;
+    width: 68px;
+    height: 48px;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    margin: auto;
+    background-size: contain;
+    background-position: center;
+    border-radius: 10px;
+  }
+
+  div.museum-project .small-playpause img {
+    padding-top: 13.57px;
+    padding-left: var(--font2);
+  }
+  div.museum-project #video {
+    max-width: var(--width);
+  }
+  div.museum-project #controls {
+    height: 53px;
+    width: 100%;
+    background: #000;
+    grid-template-columns: 26px 27px 486px 27px;
+    grid-template-rows: 53px;
+    align-items: center;
+  }
+
+  div.museum-project .progress {
+    background: linear-gradient(
+      to right,
+      #710707,
+      #710707 40%,
+      #c4c4c4 40%,
+      #c4c4c4 100%
+    );
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+  }
+  div.museum-project .play {
+    height: 5px;
+    width: 486px;
+    grid-column: 3;
+  }
+  div.museum-project .progress.volume {
+    display: none;
+  }
+  div.museum-project #volume {
+    height: 28px;
+    width: 34px;
+    grid-column: 2;
+    padding: 0px;
+    display: block;
+  }
+  div.museum-project .progress::-webkit-slider-thumb {
+    width: 13px;
+    height: 13px;
+  }
+
+  div.museum-project #btnPlayPause {
+    background: none;
+    border: none;
+    width: 26px;
+    height: 30px;
+    padding-left: 0px;
+    padding-top: 4px;
+    grid-column: 1;
+  }
+  div.museum-project #btnPlayPause > img {
+    width: 24px;
+    height: 24px;
+  }
+  div.museum-project #volume {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+  div.museum-project #volume > img {
+    width: 34px;
+    height: 28px;
+  }
+
+  div.museum-project #btnFullScreen {
+    width: 26px;
+    height: 26px;
+    padding-right: 40px;
+    grid-column: 4;
+    position: absolute;
+    top: 16px;
+    right: 4px;
+  }
+  div.museum-project #btnFullScreen img {
+    width: 26px;
+    height: 26px;
+  }
+
+  div.museum-project #buying-central-block {
+    width: 530px;
+    height: 1359px;
+    margin: 0px auto;
+    padding: 80px 40px 30px 30px;
+    display: grid;
+    grid-template-columns: 530px;
+    grid-template-rows: 643px 665px;
+    row-gap: 40px;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  div.museum-project #input-forms {
+    grid-template-columns: 251px 251px;
+    column-gap: 28px;
+    grid-template-rows: 163px repeat(5, 45px) 135px;
+    width: 530px;
+  }
+  div.museum-project span#tick-head {
+    width: 500px;
+  }
+  div.museum-project .section {
+    box-sizing: border-box;
+  }
+
+  div.museum-project #close-icon {
+    right: 27px;
+  }
+  div.museum-project #tour-to-louvre {
+    font-size: var(--font2);
+  }
+  div.museum-project .form-header {
+    grid-column: 1 / span 2;
+    border-bottom: 3px solid #740c11;
+    height: 143px;
+    margin-bottom: 40px;
+  }
+  div.museum-project .form-header > span:last-child {
+    font-size: var(--font1);
+    font-family: "roboto-regular";
+    margin-top: 15px;
+    color: #710707;
+    display: block;
+  }
+
+  div.museum-project #tickets-amount {
+    width: 530px;
+    grid-template-columns: 147px 125px;
+    grid-template-rows: 35px 25px 25px;
+    justify-content: space-between;
+    row-gap: 15px;
+    padding-top: 10px;
+  }
+  div.museum-project #buying-form {
+    position: fixed;
+    margin: 0 0;
+    max-width: 768px;
+    max-height: 1360px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 11;
+    transition: 0.3s linear;
+    transform: translateX(-150%);
+    visibility: hidden;
+    overflow: scroll;
+  }
+  div.museum-project #overlay {
+    position: fixed;
+    display: none;
+    width: 768px;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 10;
+    cursor: pointer;
+  }
+  div.museum-project .overlay-btn {
+    width: 105px;
+    height: 25px;
+    display: grid;
+    grid-template-columns: 35px 35px 35px;
+    padding-left: 5px;
+  }
+
+  div.museum-project #pay {
+    position: relative;
+    display: grid;
+    grid-template-columns: 470px;
+    grid-template-rows: 151px 117px 241px 45px;
+    padding: 25px 15px;
+    box-sizing: border-box;
+  }
+  div.museum-project .summary-amount {
+    background-color: #000;
+    width: 32px;
+    height: 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    font-size: var(--font1);
+    margin-top: 3px;
+    margin-left: 3px;
+    box-sizing: border-box;
+  }
+
+  div.museum-project #book {
+    width: 220px;
+    height: 45px;
+    bottom: 26px;
+    right: 15px;
+    position: absolute;
+    background: #710707;
+    color: #fff;
+    font-family: "Roboto-regular";
+    font-size: var(--font2);
+    text-align: center;
+    padding-top: 12px;
+    box-sizing: border-box;
+  }
+
+  div.museum-project #overview {
+    width: 500px;
+    display: grid;
+    grid-template-columns: 200px 150px;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+  }
+
+  div.museum-project #discover-louvre {
+    display: inline;
+  }
+  div.museum-project #discover-louvre div {
+    cursor: pointer;
+  }
+
+  div.museum-project #overview-text {
+    font-family: "roboto-medium";
+    font-size: var(--font4);
+    padding-bottom: 5px;
+  }
+  div.museum-project #tour {
+    font-family: "roboto-medium";
+    font-size: var(--font2);
+    line-height: 26px;
+    color: #740c11;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  div.museum-project #overview > div div {
+    text-align: left;
+    margin: 2px 0;
+  }
+
+  div.museum-project #overview > div img {
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+  div.museum-project #central-block {
+    width: 500px;
+    display: grid;
+    grid-template-columns: 42px 130px 328px;
+    grid-template-rows: 33.5px 33.5px;
+    margin-top: 22px;
+    font-family: "Roboto-regular";
+    font-size: var(--font2);
+    border-bottom: 2px solid #740c11;
+    height: 76px;
+  }
+
+  div.museum-project input[type="date"],
+  div.museum-project input[type="time"] {
+    box-sizing: border-box;
+    height: 45px;
+    width: 251px;
+    border: 1px solid #000;
+  }
+  div.museum-project input[type="text"],
+  div.museum-project input[type="email"],
+  div.museum-project input[type="tel"] {
+    height: 45px;
+    width: 530px;
+    border: 1px solid #000;
+  }
+  div.museum-project .currency {
+    display: flex;
+    margin-left: auto;
+  }
+  div.museum-project #totalsum {
+    display: grid;
+    grid-template-columns: 80px 64px;
+    justify-content: space-between;
+    height: 38px;
+    margin: 0px;
+  }
+  div.museum-project #totalsum div:first-child {
+    font-family: "roboto-regular";
+    font-size: var(--font4);
+    position: absolute;
+    top: 277px;
+  }
+  div.museum-project #totalsum div:last-child {
+    display: block;
+    font-family: "roboto-bold";
+    font-size: var(--font4);
+    position: absolute;
+    top: 277px;
+    right: 30px;
+  }
+  div.museum-project #card1 {
+    position: absolute;
+    top: 325px;
+    left: 15px;
+    z-index: 11;
+  }
+  div.museum-project #card2 {
+    position: absolute;
+    top: 355px;
+    right: 15px;
+    z-index: 10;
+  }
+}
+@media (max-width: 420px) {
+  :root {
+    --font1: 16px;
+    --font2: 16px;
+    --font3: 16px;
+    --font4: 32px;
+    --padding: 40px;
+    --width: 380px;
+  }
+  div.museum-project a {
+    text-decoration: none;
+  }
+  div.museum-project .container {
+    max-width: var(--width);
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  div.museum-project #welcome-nav ul {
+    max-width: 122px;
+    height: 263px;
+    padding-top: 35px;
+    padding-left: 0px;
+    display: none;
+    box-sizing: border-box;
+  }
+
+  div.museum-project #alt-welcome-nav {
+    display: grid;
+    visibility: hidden;
+    position: absolute;
+    top: 443px;
+    left: 55px;
+    grid-template-rows: 95px 118px;
+    grid-template-columns: repeat(3, 95px);
+    column-gap: 12px;
+    row-gap: 20px;
+  }
+  div.museum-project #alt-1 {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    max-width: 95px;
+    height: auto;
+    background: url(assets/img/alt1-420px.jpg);
+  }
+  div.museum-project #alt-2 {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    max-width: 95px;
+    height: auto;
+    background: url(assets/img/alt2-420px.jpg);
+  }
+  div.museum-project #alt-3 {
+    grid-column: 3 / 4;
+    grid-row: 1;
+    max-width: 95px;
+    height: auto;
+    background: url(assets/img/alt3-420px.jpg);
+  }
+  div.museum-project #alt-4 {
+    grid-column: 1 / 4;
+    grid-row: 2;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    margin-top: 10px;
+    display: grid;
+    grid-template-rows: 48px;
+    justify-content: center;
+  }
+  div.museum-project ul.social.social-header {
+    padding-left: 0px;
+    padding-top: 20px;
+    position: static;
+    padding-left: 0px;
+    margin: 0px;
+    gap: 0px;
+  }
+  div.museum-project .words {
+    padding: 0px;
+    color: #fff;
+    font-family: "roboto-regular";
+  }
+  div.museum-project .burger-nav {
+    display: block;
+    background: url(assets/svg/burger.svg);
+    width: 32px;
+    height: 18px;
+    position: absolute;
+    right: 20px;
+    top: 44px;
+  }
+  div.museum-project .close-nav {
+    background: url(assets/svg/Group44.svg);
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 20px;
+    top: 44px;
+    visibility: hidden;
+  }
+  div.museum-project .logo {
+    max-width: 136px;
+    background: url(assets/svg/logo-420px.svg) no-repeat;
+  }
+  div.museum-project .section.container.header-container {
+    margin: 0px 20px;
+  }
+  div.museum-project .header-container {
+    display: grid;
+    max-width: 331px;
+    grid-template-columns: 145px 200px;
+    position: relative;
+    justify-content: start;
+  }
+  div.museum-project .header-container > div {
+    justify-self: start;
+  }
+  div.museum-project #welcome-nav {
+    display: block;
+  }
+  div.museum-project #welcome-nav .burger-line {
+    padding-left: 43px;
+  }
+  div.museum-project nav div {
+    padding-left: 43px;
+    height: 23px;
+    letter-spacing: 2px;
+  }
+  div.museum-project #welcome-nav li {
+    height: 50px;
+  }
+  div.museum-project .section {
+    padding: 40px 20px;
+    margin: 0 auto;
+  }
+
+  div.museum-project header .section {
+    padding: 34.5px 0px;
+  }
+
+  div.museum-project .header-container nav {
+    display: none;
+  }
+
+  div.museum-project .welcome {
+    height: 544px;
+    background: url("assets/img/welcome-img-420.jpg") no-repeat;
+    background-position: 100% 68%;
+  }
+
+  div.museum-project h1,
+  div.museum-project h2 {
+    font-size: 28px;
+  }
+  div.museum-project h3 {
+    letter-spacing: 0.03em;
+    font-size: 18px;
+    letter-spacing: 5px;
+    margin-top: 25px;
+  }
+
+  div.museum-project .welcome h2 {
+    margin-bottom: 50px;
+  }
+
+  div.museum-project .welcome-text div {
+    max-width: 300px;
+    height: 60px;
+    padding: 17px 0 0 0;
+  }
+  div.museum-project #discover-louvre {
+    max-width: 300px;
+    height: 60px;
+    padding-top: 17px;
+  }
+
+  div.museum-project h2 {
+    letter-spacing: 2px;
+  }
+  div.museum-project h1,
+  div.museum-project h2 {
+    line-height: 40px;
+  }
+  div.museum-project #discover-louvre,
+  div.museum-project #discover-louvre a {
+    display: none;
+  }
+  div.museum-project .welcome-slider {
+    height: 80px;
+    max-width: 380px;
+    background-color: #000;
+    margin: 110px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: 1fr 75px 1fr;
+    grid-template-rows: 1fr;
+  }
+  div.museum-project .arrows {
+    max-width: 55px;
+  }
+  div.museum-project .list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1 / 2;
+    font-family: "roboto-regular";
+    font-size: var(--font2);
+    max-width: 50px;
+    padding-left: 75px;
+    padding-right: 25px;
+  }
+
+  div.museum-project .dots {
+    grid-column: 2 / 3;
+    max-width: 75px;
+    height: 7px;
+    gap: 10px;
+  }
+
+  div.museum-project .dots div {
+    height: 7px;
+    max-width: 7px;
+  }
+
+  div.museum-project .arrows {
+    padding-left: 25px;
+    gap: 15px;
+  }
+  div.museum-project .arrows button img {
+    width: 20px;
+    height: 8px;
+  }
+
+  div.museum-project .visiting-main {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 280px;
+    grid-template-rows: repeat(6, 295px);
+    row-gap: 40px;
+    margin: 0 auto;
+    max-width: 280px;
+  }
+  div.museum-project .border {
+    max-width: 150px;
+    height: 1px;
+    box-sizing: border-box;
+    border: 1px solid #710707;
+    transition-duration: 1s;
+  }
+  div.museum-project .google-view {
+    border-top: none;
+  }
+  div.museum-project .visiting-main a:hover > .google-view {
+    border-top: none;
+  }
+  div.museum-project .visiting-main a:hover > .border {
+    max-width: 280px;
+  }
+  div.museum-project .visiting-main img {
+    max-width: 280px;
+    height: 180px;
+  }
+  div.museum-project .section-header-text {
+    letter-spacing: 5px;
+  }
+  div.museum-project .virtual {
+    font-size: var(--font2);
+    font-family: "roboto-thin";
+    margin: 10px 0;
+  }
+  div.museum-project .panorama {
+    font-size: var(--font1);
+    font-family: "roboto-thin";
+    margin: 10px 0;
+  }
+  div.museum-project .test:last-child {
+    display: none;
+  }
+  div.museum-project .visiting-header,
+  div.museum-project .explore-header {
+    max-width: 380px;
+    display: flex;
+    align-items: flex-start;
+    height: 60px;
+    border-bottom: 3px solid #710707;
+  }
+  div.museum-project .tickets-header,
+  div.museum-project .contacts-header {
+    height: 60px;
+  }
+  div.museum-project #explore .container br {
+    display: none;
+  }
+  div.museum-project #explore {
+    padding-bottom: 0px;
+    height: 670px;
+  }
+  div.museum-project #explore .container p {
+    margin: 0;
+    line-height: 35px;
+  }
+  div.museum-project #explore .container {
+    height: 511px;
+    display: block;
+  }
+  div.museum-project #explore .container .explore-txt p {
+    display: none;
+  }
+  div.museum-project .explore-img {
+    display: grid;
+    grid-template-columns: 230px 150px;
+    grid-template-rows: 368px;
+    position: relative;
+    max-width: 380px;
+    padding-top: 0px;
+    margin: 0 auto 40px auto;
+    box-sizing: border-box;
+  }
+  div.museum-project #before {
+    background: url("assets/img/before-420px.jpg") no-repeat;
+    height: 368px;
+    max-width: 230px;
+    overflow: hidden;
+    background-position: 0% 0%;
+    padding: 0;
+    z-index: 2;
+  }
+
+  div.museum-project #after {
+    background: url("assets/img/after-420px.jpg") no-repeat;
+    height: 368px;
+    max-width: 150px;
+    overflow: hidden;
+    background-position: 100% 100%;
+    padding: 0;
+    z-index: 3;
+  }
+  div.museum-project #explore-slider {
+    position: absolute;
+    left: 220px;
+    top: 0px;
+    z-index: 9;
+    height: 368px;
+  }
+  div.museum-project .dark {
+    color: white;
+  }
+
+  div.museum-project .explore-header,
+  div.museum-project .tickets-header,
+  div.museum-project .contacts-header {
+    margin-bottom: 40px;
+  }
+
+  div.museum-project .explore-header p {
+    margin: 20px 0;
+  }
+  div.museum-project video {
+    max-width: 100%;
+  }
+  div.museum-project .video-header {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+
+  div.museum-project .video-header > p {
+    display: none;
+  }
+
+  div.museum-project .video-another {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 180px 180px;
+    grid-template-rows: 101px;
+    margin: 40px 0;
+  }
+
+  div.museum-project .video-dots {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(7, 8px);
+    grid-template-rows: 8px;
+    column-gap: 20px;
+    max-width: 174px;
+    margin: 0 auto;
+  }
+  div.museum-project .video-dots button {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    background: none;
+    border: none;
+  }
+  div.museum-project .video-dots button img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+
+  div.museum-project .picture-container {
+    overflow-y: hidden;
+    height: calc(600px + 60vw);
+  }
+  div.museum-project .welcome {
+    background: none;
+  }
+  div.museum-project .google-view {
+    width: 100%;
+  }
+  div.museum-project .arrows button:hover > img {
+    width: 25px;
+  }
+  div.museum-project .dot:hover {
+    height: 7px;
+  }
+  div.museum-project .picture-inner-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 45%);
+    column-gap: 24px;
+  }
+  div.museum-project .picture-inner-container img {
+    padding-bottom: 24px;
+    max-width: 178px;
+  }
+  div.museum-project .picture-inner-container div {
+    max-width: 178px;
+  }
+  div.museum-project #gallery {
+    padding-bottom: 0px;
+  }
+  div.museum-project .gallery {
+    padding-bottom: 40px;
+  }
+
+  div.museum-project .picture-inner-container::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 950px;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 23%,
+      rgba(255, 255, 255, 0) 40%
+    );
+    z-index: 1;
+  }
+
+  div.museum-project h4 {
+    font-family: "roboto-bold";
+    font-size: 28px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    letter-spacing: 1.65px;
+  }
+  div.museum-project .tickets-type div p {
+    font-size: 22px;
+  }
+  div.museum-project .tickets-header h2,
+  div.museum-project .contacts-header h2 {
+    padding-bottom: 20px;
+  }
+  div.museum-project .contacts-txt h4 {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 18.75px;
+  }
+  div.museum-project .tickets {
+    display: grid;
+    grid-template-columns: 380px;
+    grid-template-rows: 160px 286px;
+    row-gap: 40px;
+    box-sizing: border-box;
+    justify-content: normal;
+  }
+  div.museum-project
+    #tickets
+    > div.container
+    > div.tickets
+    > div.tickets-txt
+    > div
+    > img {
+    max-width: 380px;
+    height: 160px;
+    content: url(assets/img/tickets-420px.jpg);
+  }
+  div.museum-project #tickets .container {
+    height: 710px;
+    box-sizing: border-box;
+  }
+  div.museum-project .tickets-type {
+    margin: 0 auto;
+  }
+  div.museum-project #tickets-type-amount {
+    display: grid;
+    grid-template-rows: 19px 84px 84px 59px 50px;
+    grid-template-columns: 175px;
+    row-gap: 20px;
+  }
+  div.museum-project #tickets-type-amount p {
+    margin: 0;
+    float: left;
+    font-size: 16px;
+  }
+  div.museum-project .btn {
+    align-self: end;
+  }
+  div.museum-project .tickets-type > div:first-child {
+    display: none;
+  }
+  div.museum-project .cont,
+  div.museum-project .tickets-type p {
+    font-family: "roboto";
+    font-size: var(--font2);
+  }
+
+  div.museum-project
+    #tickets
+    > div.container
+    > div.tickets
+    > div.tickets-type
+    > div:nth-child(2)
+    > p:nth-child(2) {
+    position: absolute;
+    top: 38px;
+  }
+  div.museum-project
+    #tickets
+    > div.container
+    > div.tickets
+    > div.tickets-type
+    > div:nth-child(2)
+    > p:nth-child(4) {
+    margin: 0;
+    position: absolute;
+    top: 145px;
+  }
+  div.museum-project #amount,
+  div.museum-project #total {
+    justify-self: center;
+    font-size: 16px;
+    text-align: center;
+    float: none;
+  }
+  div.museum-project #amount {
+    margin-bottom: 20px;
+  }
+  div.museum-project #total {
+    margin: 0px;
+    align-self: center;
+  }
+  div.museum-project .number {
+    all: unset;
+    text-align: center;
+  }
+  div.museum-project #buy {
+    max-width: 175px;
+    height: 50px;
+    background: black;
+    color: #fff;
+    font-family: "roboto-thin";
+    font-size: var(--font2);
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+  div.museum-project #buy:hover {
+    max-width: 183px;
+    height: 53px;
+    font-size: 24px;
+  }
+  div.museum-project .btn {
+    max-width: 175px;
+    height: 50px;
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  div.museum-project .steps {
+    font-family: "roboto-bold";
+    font-size: var(--font4);
+    background: #fff;
+    border: none;
+  }
+
+  div.museum-project input.number {
+    font-family: "roboto";
+    font-size: var(--font2);
+    text-align: center;
+  }
+
+  div.museum-project #parallax {
+    max-width: 100%;
+    height: 300px;
+    background-image: url("assets/img/parallax.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+    background-position: center;
+  }
+
+  div.museum-project .contacts {
+    grid-template-columns: 380px;
+    grid-template-rows: 165px 248px;
+    row-gap: 40px;
+  }
+  div.museum-project .contacts-img {
+    max-width: 380px;
+    content: url(assets/img/map-420px.jpg);
+  }
+  div.museum-project .contacts-txt span {
+    font-family: "roboto";
+    font-size: var(--font2);
+    padding-left: 0px;
+    margin-bottom: 15px;
+    display: block;
+    color: black;
+  }
+
+  div.museum-project .footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: 20px 70px 50px;
+    justify-content: space-between;
+    row-gap: 40px;
+    position: relative;
+    height: 256px;
+    padding-bottom: 0px;
+    border-bottom: 3px solid #666666;
+  }
+  div.museum-project .social {
+    max-width: 260px;
+    height: 48px;
+    display: grid;
+    grid-template-columns: repeat(5, 48px);
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.museum-project .social-footer {
+    position: static;
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    padding-left: 0px;
+    margin: 0px;
+  }
+  div.museum-project .social-header {
+    justify-self: center;
+  }
+
+  div.museum-project p#username {
+    float: right;
+  }
+  div.museum-project .social div {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #666666;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+  div.museum-project .social div:hover {
+    border: 3px solid #9d8665;
+  }
+  div.museum-project .social div:hover > img {
+    filter: invert(60%) sepia(6%) saturate(1929%) hue-rotate(356deg)
+      brightness(220%) contrast(88%);
+    padding-top: 9px;
+    padding-left: 9px;
+  }
+
+  div.museum-project .social div img {
+    padding-top: 11px;
+    padding-left: 11px;
+  }
+  div.museum-project .footer-container nav {
+    position: relative;
+  }
+  div.museum-project nav.navigation-bottom {
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+  }
+
+  div.museum-project .navigation-bottom ul {
+    margin: 0;
+    padding-left: 0;
+    max-width: 380px;
+    height: 68px;
+    display: grid;
+    justify-content: space-between;
+    grid-template: 19px 19px / repeat(3, 80px);
+    row-gap: 30px;
+    justify-content: space-between;
+    position: static;
+  }
+
+  div.museum-project .navigation-bottom li {
+    display: block;
+    padding-bottom: 0px;
+  }
+
+  div.museum-project .footer-container div {
+    color: white;
+    font-family: "roboto-thin";
+    font-size: var(--font2);
+    padding: 0px;
+    letter-spacing: 2px;
+  }
+  div.museum-project ul.social.social-footer {
+    column-gap: 0px;
+    margin: 0 auto;
+  }
+  div.museum-project .bottom {
+    display: grid;
+    grid-template-columns: 180px 1fr 180px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "roboto-thin";
+    font-size: var(--font2);
+  }
+  div.museum-project #username {
+    text-align: right;
+  }
+
+  div.museum-project .footer {
+    padding-bottom: 0px;
+  }
+
+  div.museum-project a #rsschool,
+  div.museum-project a #username {
+    text-align: center;
+    color: #fff;
+  }
+  div.museum-project a #rsschool {
+    display: none;
+  }
+  div.museum-project .bottom > p {
+    text-align: left;
+  }
+
+  div.museum-project #playpause img {
+    background: none;
+    border: none;
+    max-width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    margin: auto;
+    background-size: contain;
+    background-position: center;
+  }
+  div.museum-project .test {
+    position: relative;
+  }
+  div.museum-project .small-playpause {
+    background: rgba(33, 33, 33, 0.8);
+    border: none;
+    max-width: 68px;
+    height: 48px;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    margin: auto;
+    background-size: contain;
+    background-position: center;
+    border-radius: 10px;
+  }
+
+  div.museum-project .small-playpause img {
+    padding-top: 13.57px;
+    padding-left: var(--font2);
+  }
+  div.museum-project #video {
+    max-width: var(--width);
+  }
+  div.museum-project #controls {
+    height: 53px;
+    max-width: 100%;
+    background: #000;
+    grid-template-columns: 14px 18px 200px 18px;
+    grid-template-rows: 50px;
+    align-items: center;
+  }
+
+  div.museum-project .progress {
+    background: linear-gradient(
+      to right,
+      #710707,
+      #710707 40%,
+      #c4c4c4 40%,
+      #c4c4c4 100%
+    );
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+  }
+  div.museum-project .play {
+    height: 4px;
+    max-width: 200px;
+    grid-column: 3;
+  }
+  div.museum-project .progress.volume {
+    display: none;
+  }
+  div.museum-project #volume {
+    height: 14px;
+    width: 18px;
+    grid-column: 2;
+    padding: 0px;
+    display: block;
+  }
+  div.museum-project .progress::-webkit-slider-thumb {
+    width: 10px;
+    height: 10px;
+  }
+
+  div.museum-project #btnPlayPause {
+    background: none;
+    border: none;
+    width: 14px;
+    height: 18px;
+    padding-left: 20px;
+    padding-top: 4px;
+    grid-column: 1;
+  }
+
+  div.museum-project #volume {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 20px;
+    left: 16px;
+  }
+  div.museum-project #volume > img {
+    width: 18px;
+    height: 14px;
+  }
+
+  div.museum-project #btnPlayPause > img {
+    width: 14px;
+    height: 18px;
+  }
+
+  div.museum-project #btnFullScreen {
+    width: 18px;
+    height: 18px;
+    padding-right: 30px;
+    grid-column: 4;
+    position: absolute;
+    top: 18px;
+    right: 1px;
+  }
+  div.museum-project #btnFullScreen img {
+    width: 18px;
+    height: 18px;
+  }
+
+  div.museum-project #buying-central-block {
+    width: 360px;
+    height: 1664px;
+    margin: 0px;
+    padding: 80px 30px 50px 30px;
+    display: grid;
+    grid-template-columns: 360px;
+    grid-template-rows: 690px 885px;
+    row-gap: 49px;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  div.museum-project #input-forms {
+    grid-template-columns: 360px;
+    row-gap: 20px;
+    grid-template-rows: 124px repeat(6, 45px) 135px;
+    width: 360px;
+  }
+  div.museum-project .form-header {
+    grid-row: 1 / 2;
+  }
+  div.museum-project input[type="date"] {
+    grid-row: 2 / 3;
+  }
+  div.museum-project input[type="time"] {
+    grid-row: 3 / 4;
+  }
+  div.museum-project input[type="text"] {
+    grid-row: 4 / 5;
+  }
+  div.museum-project input[type="email"] {
+    grid-row: 5 / 6;
+  }
+  div.museum-project input[type="tel"] {
+    grid-row: 6 / 7;
+  }
+  div.museum-project select {
+    grid-row: 7 / 8;
+    width: 360px;
+  }
+  div.museum-project #tickets-amount {
+    grid-row: 8 / 9;
+  }
+
+  div.museum-project span#tick-head {
+    max-width: 330px;
+  }
+  div.museum-project .section {
+    box-sizing: border-box;
+  }
+
+  div.museum-project #close-icon {
+    right: 27px;
+  }
+  div.museum-project #tour-to-louvre {
+    font-size: var(--font2);
+  }
+  div.museum-project .form-header {
+    grid-column: 1 / span 2;
+    border-bottom: 3px solid #740c11;
+    height: 124px;
+    margin-bottom: 40px;
+    width: 360px;
+  }
+  div.museum-project .form-header > span:last-child {
+    font-size: var(--font1);
+    font-family: "roboto-regular";
+    margin-top: 15px;
+    color: #710707;
+    display: block;
+  }
+
+  div.museum-project #tickets-amount {
+    max-width: 360px;
+    grid-template-columns: 147px 125px;
+    grid-template-rows: 35px 25px 25px;
+    justify-content: space-between;
+    row-gap: 15px;
+    padding-top: 10px;
+    column-gap: normal;
+  }
+  div.museum-project #buying-form {
+    position: fixed;
+    margin: 0 0;
+    max-width: 420px;
+    max-height: 1754px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 11;
+    transition: 0.3s linear;
+    transform: translateX(-150%);
+    visibility: hidden;
+    overflow: scroll;
+  }
+  div.museum-project #overlay {
+    position: fixed;
+    display: none;
+    max-width: 420px;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 10;
+    cursor: pointer;
+  }
+  div.museum-project .overlay-btn {
+    width: 105px;
+    height: 25px;
+    display: grid;
+    grid-template-columns: 35px 35px 35px;
+    padding-left: 5px;
+  }
+
+  div.museum-project #pay {
+    position: relative;
+    display: grid;
+    grid-template-columns: 330px;
+    grid-template-rows: 151px 117px 443px 45px;
+    padding: 25px 15px;
+    box-sizing: border-box;
+    align-self: start;
+    height: 885px;
+  }
+  div.museum-project .summary-amount {
+    background-color: #000;
+    width: 32px;
+    height: 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    font-size: var(--font1);
+    margin-top: 3px;
+    margin-left: 3px;
+    box-sizing: border-box;
+  }
+
+  div.museum-project #book {
+    width: 220px;
+    height: 45px;
+    bottom: 26px;
+    right: 15px;
+    position: absolute;
+    background: #710707;
+    color: #fff;
+    font-family: "Roboto-regular";
+    font-size: var(--font2);
+    text-align: center;
+    padding-top: 12px;
+    box-sizing: border-box;
+  }
+
+  div.museum-project #overview {
+    max-width: 330px;
+    display: grid;
+    grid-template-columns: 200px 120px;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+  }
+  div.museum-project #overview > img {
+    width: 120px;
+  }
+  div.museum-project #discover-louvre {
+    display: inline;
+  }
+  div.museum-project #discover-louvre div {
+    cursor: pointer;
+  }
+
+  div.museum-project #overview-text {
+    font-family: "roboto-medium";
+    font-size: var(--font4);
+    padding-bottom: 5px;
+  }
+  div.museum-project #tour {
+    font-family: "roboto-medium";
+    font-size: var(--font2);
+    line-height: 26px;
+    color: #740c11;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  div.museum-project #overview > div div {
+    text-align: left;
+    margin: 2px 0;
+  }
+
+  div.museum-project #overview > div img {
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+  div.museum-project #central-block {
+    width: 330px;
+    display: grid;
+    grid-template-columns: 42px 130px 160px;
+    grid-template-rows: 33.5px 33.5px;
+    margin-top: 22px;
+    font-family: "Roboto-regular";
+    font-size: var(--font2);
+    border-bottom: 2px solid #740c11;
+    height: 76px;
+  }
+  div.museum-project span#booking {
+    font-size: 32px;
+  }
+  div.museum-project input[type="date"],
+  div.museum-project input[type="time"] {
+    box-sizing: border-box;
+    height: 45px;
+    width: 360px;
+    border: 1px solid #000;
+  }
+  div.museum-project input[type="text"],
+  div.museum-project input[type="email"],
+  div.museum-project input[type="tel"] {
+    height: 45px;
+    width: 360px;
+    border: 1px solid #000;
+  }
+  div.museum-project .currency {
+    display: flex;
+    margin-left: auto;
+  }
+  div.museum-project #totalsum {
+    display: grid;
+    grid-template-columns: 80px 64px;
+    justify-content: space-between;
+    height: 38px;
+    margin: 0px;
+  }
+  div.museum-project #totalsum div:first-child {
+    font-family: "roboto-regular";
+    font-size: var(--font4);
+    position: absolute;
+    top: 277px;
+  }
+  div.museum-project #totalsum div:last-child {
+    display: block;
+    font-family: "roboto-bold";
+    font-size: var(--font4);
+    position: absolute;
+    top: 277px;
+    right: 30px;
+  }
+  div.museum-project #card1 {
+    position: absolute;
+    width: 330px;
+    top: 325px;
+    left: 15px;
+    z-index: 11;
+  }
+  div.museum-project #card2 {
+    position: absolute;
+    width: 330px;
+    top: 540px;
+    left: 15px;
+    z-index: 10;
+  }
+  div.museum-project #comparison {
+    width: 95%;
+    height: 95%;
+    margin: 1vw auto;
+    max-height: 650px;
+    max-width: 650px;
+    overflow: hidden;
+  }
+  div.museum-project #comparison figure {
+    background-image: url(assets/img/after.jpg);
+    background-size: cover;
+    font-size: 0;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    width: 100%;
+  }
+  div.museum-project #divisor {
+    background-image: url(assets/img/before.jpg);
+    background-size: cover;
+    bottom: 0;
+    box-shadow: 10px 0 15px -13px #000;
+    height: 100%;
+    max-width: 98.6%;
+    min-width: 0.6%;
+    overflow: visible;
+    position: absolute;
+    width: 55%;
+  }
+  div.museum-project #btnPlayPause {
+    padding-left: 0px;
+  }
+}
