@@ -66,7 +66,6 @@ section#contact {
   display: grid;
 }
 section#experience {
-  
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 2;
 }
@@ -5083,7 +5082,7 @@ div.museum-project #compare::before {
   }
 }
 section#experience h2.numbered-heading.master_page,
-section#education h2.numbered-heading.master_page{
+section#education h2.numbered-heading.master_page {
   grid-column: 1 / 3;
   grid-row: 1 / 2;
 }
@@ -5126,9 +5125,43 @@ section#experience div.imageRight {
     font-size: 1rem;
   }
   .kNIdQM ul.skills-list {
-  font-size: 1.15rem;
+    font-size: 1.15rem;
   }
   @media (max-width: 830px) {
+    header.master_page {
+      height: 40px;
+    }
+    div.logo img {
+      height: 30px;
+      padding-top: 5px;
+    }
+    header.master_page > nav {
+      height: 40px;
+    }
+    .nav_bar {
+      margin-top: 25px;
+    }
+    div.logo img:hover {
+      height: 35px;
+      padding-top: 2px;
+    }
+    a.navigate {
+      margin-top: 0px;
+      padding-top: 5px;
+      height: 35px;
+    }
+    a.navigate:hover {
+      font-size: 0.85rem;
+    }
+    a.resume {
+      height: 25px;
+      padding-top: 2px;
+      margin-top: 2px;
+    }
+
+    div.nav_bar > ol > li {
+      height: 40px;
+    }
     div.imageLeft {
       grid-column: 1 / 3;
       grid-row: 2 / 3;
@@ -5148,7 +5181,7 @@ section#experience div.imageRight {
     }
     section#work div {
       width: 95%;
-      margin:0 auto;
+      margin: 0 auto;
       text-align: center;
     }
     div#first_img {
@@ -5175,10 +5208,6 @@ section#experience div.imageRight {
     .big-heading {
       font-size: clamp(14px, 3vw, 25px);
     }
-    a.resume {
-      height: 40px;
-      padding-top: 5px;
-    }
     p.master_page,
     a.intext,
     ul.courses a,
@@ -5194,8 +5223,15 @@ section#experience div.imageRight {
       padding-top: 10%;
     }
     .dVLQAC li a svg {
-      width: 28px;
-      height: 28px;
+      width: 24px;
+      height: 24px;
+    }
+    .jJFfEJ a {
+      margin: 0px auto;
+      padding: 5px;
+    }
+    footer.footer__StyledFooter-sc-4jwnt4-0 a {
+      font-size: 0.8rem;
     }
     .bNXWUU .inner {
       grid-template-columns: 2fr 2fr;
@@ -5205,24 +5241,22 @@ section#experience div.imageRight {
       min-width: 150px;
     }
     .kNIdQM ul.skills-list {
-    grid-template-columns: repeat(2, minmax(120px, 250px));
-    font-size: clamp(14px, 2vw, 18px);
+      grid-template-columns: repeat(2, minmax(120px, 250px));
+      font-size: clamp(14px, 2vw, 18px);
     }
     section#experience {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 2;
     }
     div.imageRight {
       grid-column: 1 / 3;
       grid-row: 1 / 2;
-  }
-  section#experience div:nth-first-child() {
-    
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
-  }
+    }
+    section#experience div:nth-first-child() {
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+    }
     h1.master_page {
-      
       font-size: clamp(12px, 2.5vw, 22px);
     }
     h2.master_page {
@@ -5234,20 +5268,44 @@ section#experience div.imageRight {
     h5.master_page {
       font-size: 1rem;
     }
-    @media (max-width: 580px) {
-      .bNXWUU .inner {
-        grid-template-columns: 1fr;
-        gap: 20px;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      text-align: center;
+    }
+    section#work img,
+    section#experience img,
+    section#education img {
+      width: 70%;
+    }
+    div.imageLeft,
+    div.imageRight {
+      text-align: center;
+    }
+    section#experience li {
+      list-style: none;
+    }
+    section#work p {
+      margin-top: 0px;
+    }
+  }
+  @media (max-width: 580px) {
+    .bNXWUU .inner {
+      grid-template-columns: 1fr;
+      gap: 20px;
     }
     .iTdkQf {
       grid-row: 1 / 2;
-  } section {
-    text-align: justify;
-  }
-  div.fadeup-enter-done  {
-    margin: 0 auto;
-  }
-  h1,h2,h3,h4,h5,h6 {
-    text-align: center;
-  }
     }
+    section {
+      text-align: justify;
+    }
+    div.fadeup-enter-done {
+      margin: 0 auto;
+    }
+  }
+}
