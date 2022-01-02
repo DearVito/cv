@@ -65,7 +65,10 @@ const targetWidth768 = 768,
   mainBurger = document.querySelector(".eCxtrN"),
   altNavMenu = document.querySelector(".dAwNpJ"),
   mainCloseBurger = document.querySelector(".main-page-close"),
-  headerMain = document.querySelector("header.master_page");
+  headerMain = document.querySelector("header.master_page"),
+  mainPage = document.querySelector("main.master_page"),
+  aNavigate = document.querySelectorAll("a.navigate"),
+  aResume = document.querySelector("a.resume");
 
 btn.addEventListener("click", on);
 closeIcon.addEventListener("click", off);
@@ -74,6 +77,7 @@ burger.addEventListener("click", burgerOn);
 closeBurger.addEventListener("click", burgerOff);
 mainBurger.addEventListener("click", mainBurgerOn);
 mainCloseBurger.addEventListener("click", mainBurgerOff);
+mainPage.addEventListener("click", mainBurgerOff);
 document.addEventListener("keydown", function (event) {
   if (event.code === "Escape") {
     off();
@@ -95,7 +99,10 @@ nextArr.addEventListener("click", nextSlide);
 prevArr.addEventListener("click", prevSlide);
 videoPrev.addEventListener("click", prevVideo);
 videoNext.addEventListener("click", nextVideo);
-
+aNavigate.forEach((item) => {
+  item.addEventListener("click", mainBurgerOff);
+});
+aResume.addEventListener("click", mainBurgerOff);
 function pauseAnotherVideos(index) {
   for (let j = 0; j < smallVideos.length; j++) {
     if (j !== index) {
