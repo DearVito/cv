@@ -5,10 +5,7 @@ let mainVideo = document.querySelector("video#video"),
   allVideosOnPage = document.querySelectorAll("video"),
   btnPlay = document.getElementById("btnPlayPause"),
   imgPlay = document.querySelector("#btnPlayPause img");
-// mainVideo.onloadedmetadata = function () {
-//   console.log("metadata loaded!");
-//   console.log(this.duration);
-// };
+
 mainVideo.addEventListener("click", playPause);
 ppbutton.addEventListener("click", playPause);
 btnPlay.addEventListener("click", playPause);
@@ -30,14 +27,6 @@ for (let ind = 0; ind < progress.length; ind++) {
     this.style.background = `linear-gradient(to right, #710707 0%, #710707 ${value}%, #fff ${value}%, white 100%)`;
   });
 }
-// progress[0].addEventListener("input", seek);
-
-// function seek(e) {
-//   var percent = e.offsetX / this.offsetWidth;
-//   console.log(e.offsetX, this.offsetWidth);
-//   mainVideo.currentTime = percent * mainVideo.duration;
-//   e.target.value = Math.floor(percent / 100);
-// }
 const divisor = document.getElementById("divisor"),
   whiteSlider = document.getElementById("circle"),
   slider = document.getElementById("slider");
@@ -72,13 +61,19 @@ const targetWidth768 = 768,
   currentNum = document.getElementById("current-number"),
   videoPrev = document.getElementById("videoPrev"),
   videoNext = document.getElementById("videoNext"),
-  videoDots = document.querySelectorAll(".video-dot");
+  videoDots = document.querySelectorAll(".video-dot"),
+  mainBurger = document.querySelector(".eCxtrN"),
+  altNavMenu = document.querySelector(".dAwNpJ"),
+  mainCloseBurger = document.querySelector(".main-page-close"),
+  headerMain = document.querySelector("header.master_page");
 
 btn.addEventListener("click", on);
 closeIcon.addEventListener("click", off);
 lay.addEventListener("click", off);
 burger.addEventListener("click", burgerOn);
 closeBurger.addEventListener("click", burgerOff);
+mainBurger.addEventListener("click", mainBurgerOn);
+mainCloseBurger.addEventListener("click", mainBurgerOff);
 document.addEventListener("keydown", function (event) {
   if (event.code === "Escape") {
     off();
@@ -253,6 +248,17 @@ function activeVideoDot(n) {
   });
   videoDots[n].classList.add("active-video-dot");
 }
-let ownAssessment = `
-`;
-console.log(ownAssessment);
+
+function mainBurgerOn() {
+  mainBurger.style.display = "none";
+  altNavMenu.style.visibility = "visible";
+  mainCloseBurger.style.display = "block";
+  headerMain.style.backgroundColor = "rgba(154, 194, 255, 1)";
+}
+
+function mainBurgerOff() {
+  mainBurger.style.display = "block";
+  altNavMenu.style.visibility = "hidden";
+  mainCloseBurger.style.display = "none";
+  headerMain.style.backgroundColor = "rgba(154, 194, 255, 0.9)";
+}
