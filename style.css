@@ -599,10 +599,6 @@ section#contact {
 
 .my_modal-body {
   position: relative;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
   padding: 15px;
   overflow: auto;
 }
@@ -3068,7 +3064,7 @@ div.museum-project #compare::before {
     background-color: #000;
     margin: 410px 0px 0px 0px;
     display: grid;
-    grid-template-columns: 255px 148px 1fr;
+    grid-template-columns: 325px 178px 1fr;
     grid-template-rows: 1fr;
   }
   div.museum-project .arrows {
@@ -3104,12 +3100,12 @@ div.museum-project #compare::before {
   div.museum-project .visiting-main {
     padding-top: 40px;
     display: grid;
-    grid-template-columns: repeat(2, 280px);
+    grid-template-columns: repeat(2, 270px);
     grid-template-rows: repeat(3, 301px);
     row-gap: 40px;
-    column-gap: 56px;
+    column-gap: 16px;
     margin: 0 auto;
-    width: 620px;
+    width: 560px;
   }
   div.museum-project .border {
     width: 150px;
@@ -3237,7 +3233,7 @@ div.museum-project #compare::before {
   }
   div.museum-project .video-header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
     margin-bottom: 20px;
@@ -3363,7 +3359,7 @@ div.museum-project #compare::before {
   }
   div.museum-project .tickets {
     display: grid;
-    grid-template-columns: 444px 175px;
+    grid-template-columns: 344px 175px;
     grid-template-rows: 340px;
     column-gap: 40px;
     box-sizing: border-box;
@@ -3376,7 +3372,7 @@ div.museum-project #compare::before {
     > div.tickets-txt
     > div
     > img {
-    width: 444px;
+    width: 344px;
     height: 340px;
   }
   div.museum-project #tickets .container {
@@ -3509,7 +3505,7 @@ div.museum-project #compare::before {
   }
   div.museum-project .social-footer {
     position: absolute;
-    left: 280px;
+    left: 80px;
     padding-left: 0px;
   }
   div.museum-project .social-header {
@@ -4312,7 +4308,7 @@ div.museum-project #compare::before {
     display: grid;
     justify-content: space-between;
     align-items: center;
-    grid-template-columns: 180px 180px;
+    grid-template-columns: 130px 130px;
     grid-template-rows: 101px;
     margin: 40px 0;
   }
@@ -4382,7 +4378,7 @@ div.museum-project #compare::before {
     top: 0px;
     left: 0;
     right: 0;
-    bottom: 950px;
+    bottom: 520px;
     background: linear-gradient(
       0deg,
       rgba(0, 0, 0, 1) 23%,
@@ -4412,7 +4408,7 @@ div.museum-project #compare::before {
   }
   div.museum-project .tickets {
     display: grid;
-    grid-template-columns: 380px;
+    grid-template-columns: 270px;
     grid-template-rows: 160px 286px;
     row-gap: 40px;
     box-sizing: border-box;
@@ -4425,7 +4421,7 @@ div.museum-project #compare::before {
     > div.tickets-txt
     > div
     > img {
-    max-width: 380px;
+    max-width: 270px;
     height: 160px;
     content: url(assets/img/tickets-420px.jpg);
   }
@@ -4548,7 +4544,7 @@ div.museum-project #compare::before {
   }
 
   div.museum-project .contacts {
-    grid-template-columns: 380px;
+    grid-template-columns: 270px;
     grid-template-rows: 165px 248px;
     row-gap: 40px;
   }
@@ -4570,7 +4566,7 @@ div.museum-project #compare::before {
     grid-template-columns: repeat(3, 80px);
     grid-template-rows: 20px 70px 50px;
     justify-content: space-between;
-    row-gap: 40px;
+    row-gap: 10px;
     position: relative;
     height: 256px;
     padding-bottom: 0px;
@@ -4658,7 +4654,7 @@ div.museum-project #compare::before {
   }
   div.museum-project .bottom {
     display: grid;
-    grid-template-columns: 180px 1fr 180px;
+    grid-template-columns: 120px 1fr 150px;
     align-items: center;
     justify-content: space-between;
     font-family: "roboto-thin";
@@ -5328,6 +5324,33 @@ section#experience div.imageRight {
     section#work p {
       margin-top: 0px;
     }
+    div.museum-project #alt-welcome-nav {
+      grid-template-rows: 194px 161px 118px;
+      grid-template-columns: 249px 249px;
+      column-gap: 20px;
+      row-gap: 20px;
+    }
+    div.museum-project .navigation-bottom ul {
+      width: 243px;
+      height: 128px;
+      display: grid;
+      justify-content: space-between;
+      grid-template-columns: 110px 110px;
+      grid-template-rows: 51px 51px 51px;
+      align-items: center;
+      text-align: left;
+      position: absolute;
+      top: 0px;
+    }
+    div.museum-project .play {
+      height: 5px;
+      width: 386px;
+      grid-column: 3;
+      padding-left: 40px;
+    }
+    div.museum-project #volume {
+      display: none;
+    }
   }
   @media (max-width: 580px) {
     .bNXWUU .inner {
@@ -5470,6 +5493,27 @@ section#experience div.imageRight {
     section#contact {
       padding-bottom: 40%;
       padding-top: 40%;
+    }
+    div.museum-project .play {
+      width: 126px;
+      margin-left: 12px;
+    }
+    div.museum-project .navigation-bottom ul {
+      margin-top: 20px;
+      margin-left: 10px;
+      width: 243px;
+      height: 68px;
+      display: grid;
+      justify-content: space-between;
+      grid-template-columns: 110px 110px;
+      grid-template-rows: 11px 11px 11px;
+      align-items: center;
+      text-align: left;
+      position: absolute;
+      top: 0px;
+    }
+    div.museum-project ul.social.social-footer {
+      margin-top: 65px;
     }
   }
 }
