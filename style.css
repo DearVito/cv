@@ -547,7 +547,13 @@ section#work div:hover {
   border-radius: 6px;
   outline: 0;
 }
-
+section#contact {
+  padding-bottom: 15%;
+  padding-top: 15%;
+}
+section#work {
+  height: 60vh;
+}
 @media (min-width: 768px) {
   .my_modal-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -5349,6 +5355,7 @@ section#experience div.imageRight {
       display: block;
     }
     .eCxtrN {
+      visibility: visible;
       display: flex;
       right: 10px;
       align-items: end;
@@ -5450,6 +5457,16 @@ section#experience div.imageRight {
     }
     main.master_page > section {
       padding-top: 20%;
+    }
+    main.master_page > section#main_page {
+      padding-top: 0px;
+    }
+    .iKeBGp {
+      display: block;
+    }
+    section#contact {
+      padding-bottom: 40%;
+      padding-top: 40%;
     }
   }
 }
