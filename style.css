@@ -5259,6 +5259,9 @@ section#experience div.imageRight {
     main.master_page > section {
       padding-top: 10%;
     }
+    section#main_page {
+      padding-top: 5%;
+    }
     .dVLQAC li a svg {
       width: 24px;
       height: 24px;
