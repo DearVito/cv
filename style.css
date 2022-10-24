@@ -254,6 +254,11 @@ ul.courses li,
 ul.master_page li {
   display: list-item;
 }
+ul.skills-list li {
+  font-style: italic;
+  font-weight: 600;
+
+}
 .dVLQAC li a {
   padding: 10px;
 }
