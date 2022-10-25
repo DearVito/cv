@@ -169,7 +169,8 @@ a.resume {
 a.intext,
 ul.courses a,
 section#work a,
-footer.footer__StyledFooter-sc-4jwnt4-0 a {
+footer.footer__StyledFooter-sc-4jwnt4-0 a,
+h3.master_page{
   text-decoration: none;
   color: #5983ff;
   font-size: 1.35rem;
@@ -336,7 +337,8 @@ svg,
   line-height: 0.9;
   color: #6a87df;
 }
-h3 .intext {
+h3 .intext,
+h3.master_page {
   color: #6a87df;
 }
 .eEjAsd p,
@@ -5115,7 +5117,8 @@ section#experience div.imageRight {
   .jJFfEJ a,
   a.navigate,
   a.resume,
-  footer.footer__StyledFooter-sc-4jwnt4-0 a {
+  footer.footer__StyledFooter-sc-4jwnt4-0 a,
+  h3.master_page {
     font-size: 1.15rem;
   }
   main.master_page > section {
@@ -5245,7 +5248,8 @@ section#experience div.imageRight {
     ul.courses a,
     .jJFfEJ a,
     a.navigate,
-    a.resume {
+    a.resume,
+    h3.master_page {
       font-size: clamp(14px, 2vw, 18px);
     }
     div.textLeft {
